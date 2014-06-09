@@ -1,0 +1,75 @@
+name: Gombaszögi Nyári Tábor 
+markdown: redcarpet
+highlighter: null
+permalink: /:year/:month/:day/:title/
+url: http://www.gombaszog.sk
+paginate: 3
+paginate_path: /blog/page-:num
+timezone: Europe/Bratislava
+exclude: ['sexrobots.txt', 'README.md', 'LICENSE', 'Gemfile', 'Makefile']
+excerpt_separator: <!--more-->
+minify_html: false
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts  
+    - _assets/downloads  
+description: >
+  A Gombaszögi Nyári Tábor, a szlovákiai magyar fiatalok hagyományos fesztiválja, találkozóhelye és szabadegyeteme! 
+  Gyere Te is július 15-20. között Krasznahorkára, és légy részese Te is a nyár legjobb bulijának!
+jekyll_timeago:
+  today: 'ma'
+  yesterday: 'tegnap'
+  tomorrow: 'holnap'
+  and: 'és'
+  suffix: 'ezelőtt'
+  prefix: ''
+  suffix_future: 'in'
+  prefix_future: ''
+  years: 'évvel'
+  year: 'évvel'
+  months: 'hónappal'
+  month: 'hónappal'
+  weeks: 'héttel'
+  week: 'héttel'
+  days: 'nappal'
+  day: 'nappal'
+keywords: 
+- gombaszög
+- gombaszog
+- gombaszögi
+- gombaszogi
+- nyári
+- nyari
+- tábor
+- tabor
+- fesztivál
+- fesztival
+- július
+- július
+- program
+- programok
+- akció
+- akcio
+- rendezvény
+- rendezvény
+- felvidéki
+- felvideki
+- szlovakiai
+- szlovákiai
+- magyar
+- zene
+- közélet
+- kozelet
+- kultúra
+- kultura
+- muveszet
+- művészet
+- muveszetek
+- művészetek
+- szorakozas
+- szórakozás

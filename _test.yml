@@ -1,0 +1,38 @@
+name: '[TEST SITE]'
+markdown: redcarpet
+highlighter: null
+permalink: /:year/:month/:day/:title/
+url: http://test.gombaszog.sk:8765
+paginate: 3
+paginate_path: /blog/page-:num
+timezone: Europe/Bratislava
+exclude: ['sexrobots.txt', 'README.md', 'LICENSE', 'Gemfile', 'Makefile']
+excerpt_separator: <!--more-->
+minify_html: false
+assets:
+  js_compressor: 
+  css_compressor: 
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+    - _assets/downloads
+description: Tesztoldal :) ne vedd komolyan!
+jekyll_timeago:
+  today: 'ma'
+  yesterday: 'tegnap'
+  tomorrow: 'holnap'
+  and: 'és'
+  suffix: 'ezelőtt'
+  prefix: ''
+  suffix_future: 'in'
+  prefix_future: ''
+  years: 'évvel'
+  year: 'évvel'
+  months: 'hónappal'
+  month: 'hónappal'
+  weeks: 'héttel'
+  week: 'héttel'
+  days: 'nappal'
+  day: 'nappal'

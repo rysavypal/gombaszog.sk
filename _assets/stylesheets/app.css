@@ -1,0 +1,339 @@
+/*
+ *= require vendor/bootstrap
+ *= require vendor/flexslider
+ *= require vendor/main
+ *= require vendor/responsive
+ *= require vendor/preset
+ *= require vendor/select2
+ *= require vendor/select2-bootstrap
+ */
+
+/* modal */
+.modal-content {
+  position:relative;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border:1px solid #999;
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius: 0px;
+  outline:0;
+  /*-webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);
+  box-shadow:0 3px 9px rgba(0,0,0,0.5);*/
+  background-clip:padding-box;
+}
+#szavazas h4 { font-weight: bold;}
+.close { 
+  color: #f1f1f1;
+  opacity:.6;
+  filter:alpha(opacity=60);
+}
+.modal-header { border-bottom: 1px solid #666;}
+
+@media screen and (min-width:768px) {
+  .modal-dialog {
+    width:80%;
+    margin:30px auto;
+    margin-top: 60px;
+  }
+}
+#dalnap .album-heading,
+.press .album-heading {
+    bottom: 0px;
+  left: 0;
+  padding: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: absolute;
+  width: 100%;
+  text-shadow:
+    2px 2px 0 #292e42,
+   -1px -1px 0 #292e42,  
+    1px -1px 0 #292e42,
+   -1px  1px 0 #292e42,
+    1px  1px 0 #292e42;
+}
+
+#dalnap .album-heading {
+  padding-bottom: 3px;
+  padding-top: 3px;
+  margin-bottom: 5px;
+}
+
+#dalnap .album-heading h3 { 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1.6vw; 
+}
+
+
+#dalnap .album-overlay .album-info {
+  padding-top: 100px;
+}
+#dalnap .album-overlay .album-info h3,
+#dalnap .album-overlay .album-info h4 {
+  font-size: 24px;
+}
+
+#dalnap .album-overlay .album-info h4 a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.press .album-overlay .album-info {
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    transition: all 300ms ease 0s;
+    width: 100%;
+}
+
+#ticket a.btn { 
+  border-radius: 0px;
+}
+.modal-header button:hover { background: transparent;}
+/* youtube vid. respo */
+.videoWrapper { 
+ 	margin-right: auto; 
+ 	margin-left: auto; 
+ 	z-index:0; 
+ 	margin-bottom: 10px;
+}
+.videoWrapper {
+	position: relative; 
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* google maps respo */
+.google-maps {
+position: relative;
+padding-bottom: 75%; // This is the aspect ratio
+height: 0;
+overflow: hidden;
+}
+.google-maps iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
+
+footer a {
+  color: white;
+}
+
+a.white {
+  color: white;
+}
+
+a.footer-fb:hover {
+  color: #3B5998;
+}
+
+a.footer-tw:hover {
+  color: #00acee;
+}
+
+a.footer-yt:hover {
+  color: #e52d27;
+}
+
+a.footer-ig:hover {
+  color: #3f729b;
+}
+
+a.footer-rss:hover {
+  color: #FF6600;
+}
+
+a.footer-gplus:hover {
+  color: #DD4B39;
+}
+
+#post-content img {
+  width: 100%;
+}
+
+#post-content p {
+  text-align: justify;
+}
+
+p.text-justified {
+  text-align: justify;
+}
+
+footer img {
+  opacity: 0.8;
+  filter:alpha(opacity=80);
+}
+footer img:hover {
+  opacity: 1;
+  filter:alpha(opacity=100);
+}
+.row .col-sm-p {
+  padding-top: 10px;
+}
+.nav > li {
+  padding-bottom: 10px; 
+  padding-top: 10px;
+}
+
+ul.galery > li {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  background-size: cover; 
+  background-position: 50%;
+}
+
+ul.galery > li > a {
+  height: 100px;
+  line-height: 100px;
+  display: block;
+} 
+
+.ticket-hidden {
+  display: none;
+  padding-top: 2em;
+}
+
+a.ticket-fb, a.ticket-manual {
+  color: white;
+}
+
+a.ticket-fb:hover {
+  color: #3B5998;
+}
+
+a.ticket-manual:hover {
+  color: orange;
+}
+
+div.info-icon {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+div.info-icon div.icon {
+  float: left;
+  width: 8rem;
+  color: #bbbac0;
+  font-size: 3.4rem;
+  line-height: 7.4rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid #bbbac0;  
+}
+
+div.info-icon div.info {
+  padding: 1.0rem 0 0 9rem;
+}
+
+div.info-icon div.info h3 {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+div.info-icon div.info span {
+  font-size: 16px;
+}
+
+.icon-list {
+  padding-left: 0px;
+}
+.icon-list, .icon-list li {
+  list-style: none;
+}
+.icon-list li:before {
+  font-family: 'FontAwesome';
+  padding-right: 10px;
+}
+.icon-list li.email:before {
+  content: '\f003';
+}
+.icon-list li.phone:before {
+  content: '\f095';
+}
+.icon-list li.press:before {
+  content: '\f1e0';
+}
+.icon-list li.about:before {
+  content: '\f059';
+}
+
+a.nocolor {
+  color: inherit;
+}
+
+input.has-error {
+  background-color: #FFCCCC;
+}
+
+@media only screen and (max-width: 768px) {
+  
+   .nav > li {
+    margin-bottom: 1px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  #navigation .navbar-nav li a:hover {
+    background: rgba(0, 151, 192, 0.7) !important;
+    color: #fff !important;
+
+  }
+  #navigation .navbar-nav li a.active {
+    background: rgba(0, 151, 192, 0.7) !important;
+    color: #fff !important;
+  }
+  #navigation .navbar-nav li a {
+    font-weight: bold !important;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    background: rgba(0, 151, 192, 0.4);
+  }
+
+  #dalnap .album-heading h3 { 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 5vw; 
+  }
+}
+@media only screen and (max-width: 479px) {
+  .nav > li {
+    margin-bottom: 1px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  #navigation .navbar-nav li a:hover {
+    background: rgba(0, 151, 192, 0.7) !important;
+    color: #fff !important;
+
+  }
+  #navigation .navbar-nav li a.active {
+    background: rgba(0, 151, 192, 0.7) !important;
+    color: #fff !important;
+  }
+  #navigation .navbar-nav li a {
+    font-weight: bold !important;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    background: rgba(0, 151, 192, 0.4);
+  }
+}

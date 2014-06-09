@@ -1,0 +1,40 @@
+---
+layout: page
+group: otletborze
+---
+<div class="row">
+  <div class="col-md-8 backgrounded2">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <hr class="hidden-xs"/>
+    <div class="post">
+      {{ content }}
+      <div class="metafooter">
+        <p class="like">{% fb_like %}</p>
+      </div>
+    </div>
+    <hr/>
+    <div class="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'gombaszog';
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </div>
+  <div class="col-md-4 hidden-sm hidden-xs">
+    <img src="{{ page.thumbnail }}" alt="" class="img-responsive" />
+    <div class="container backgrounded8 tile">
+      <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fgombaszog&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=267323596708516" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowTransparency="true" width="100%"></iframe> 
+    </div> 
+    <div class="container backgrounded8 tile">
+      <a class="twitter-timeline" data-dnt="true" data-chrome="transparent noborders" href="https://twitter.com/gombaszog" data-widget-id="395938001835925506">Tweets by @gombaszog</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+</div> 

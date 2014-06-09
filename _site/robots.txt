@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /api
+Disallow: /feed
+Disallow: /quiz
+Disallow: /dalnap
+Sitemap: http://www.gombaszog.sk/sitemap.xml
