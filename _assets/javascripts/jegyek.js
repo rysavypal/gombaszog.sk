@@ -37,8 +37,11 @@ if ($(".ticket-form").length > 0) {
         $(this).removeClass("has-error");
       });
     });
-    if (e.email == "Already used!") {
-      alert("A megadott e-mail címet már használták egy jegyelővételhez. Ha az adott jegyelővétel sikertelen volt, akkor az e-mail cím három órán keresztül nem használható és a lefoglalt szállás és/vagy hely a buszon is eltűnik. Arra kérünk tehát, hogy NE ADJ MEG alternatív e-mail címet, hanem próbálkozz három órával késsőbb!");
+    if (e.email == "used") {
+      alert("A megadott e-mail címet már használták egy jegyelővételhez! Minden megvásárolt jegyhez egyedi e-mail címet kell megadni!");
+    } else (e.email == "retry") {
+      $("#ticket_email").removeClass("has-error");
+      alert("Valamikor az elmúlt három órában már próbálkoztál egy jegyelővétellel, de nem jártál sikerrel. Az egyes újrapróbálkozások között minimum három órának kell eltelnie, tehát arra kérünk várd ki ezt az időt és később próbálkozz újra!");
     } else if (e.price) {
       alert("A fizetendő összeg nem lehet 0€!");
     } else alert("Hoppá! Az űrlapot hibásan töltötted ki, a javítandó mezőket megjelöltük pirossal!");
