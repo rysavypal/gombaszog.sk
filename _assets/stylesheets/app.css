@@ -264,6 +264,9 @@ div.info-icon div.info span {
 .icon-list li.email:before {
   content: '\f003';
 }
+.icon-list li.ticket:before {
+  content: '\f145';
+}
 .icon-list li.phone:before {
   content: '\f095';
 }

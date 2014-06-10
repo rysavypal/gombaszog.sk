@@ -58,7 +58,7 @@ if ($(".ticket-form").length > 0) {
     // scroller 
     $('.btn-pricing').click(function() {
       $('body').animate({
-        scrollTop: $('.ticket-hidden').offset().top
+        scrollTop: $('.roll-here').offset().top
       }, "slow");
     });   
     // calculate price
