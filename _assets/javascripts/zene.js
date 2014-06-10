@@ -12,7 +12,7 @@ if ($("#dalnap").length > 0) {
     }
 
     $("#dalnap .band").each(function(k,v) {
-      $.getJSON("http://graph.facebook.com/"+$(v).data("photo")+"/likes?summary=1", function (r) {
+      $.getJSON("https://graph.facebook.com/"+$(v).data("photo")+"/likes?summary=1", function (r) {
         $(v).find(".likes-num").html(r.summary.total_count);
       });
       $(v).find(".like-button").click(function(e) {
