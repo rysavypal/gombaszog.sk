@@ -37,7 +37,7 @@ if ($(".ticket-form").length > 0) {
         $(this).removeClass("has-error");
       });
     });
-    if (e.email == "used") {
+    if (e.email == "used") { 
       alert("A megadott e-mail címet már használták egy jegyelővételhez! Minden megvásárolt jegyhez egyedi e-mail címet kell megadni!");
     } else if (e.email == "retry") {
       $("#ticket_email").removeClass("has-error");
