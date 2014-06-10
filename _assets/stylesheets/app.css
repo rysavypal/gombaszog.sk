@@ -91,6 +91,12 @@
     width: 100%;
 }
 
+#sajto-pages.pagination {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #ticket a.btn { 
   border-radius: 0px;
 }
