@@ -290,65 +290,46 @@ footer .social-link a {
   #home {
     margin-top: 18%;
   }
-  #home .vereb {
-    margin-top: 0%;
-  }
 }
 
+#home img.vereb {
+  width: 15%; 
+  margin-top: 10%; 
+  margin-left: 5%;
+}
 
-#home .vereb {
-  float: left;
-  width: 100%;
+#home div.bubble {
+  border-radius: 100%;
+  background-color: white;
 }
-.madar {
-  background: url('<%= asset_path "vereb.png" %>') no-repeat;
-  background-size: 100% 100%;
-  padding-right: 10px;
+
+#home div.bubble-small {
+  margin-top: 10%;
+  padding: 4px 6px 4px 6px;
+  margin-right: 10px; 
 }
-.buble {
-  background: #fff;
-  border-radius: 20% / 20%;
-  -moz-border-radius: 20% / 20%;
-  -wekit-border-radius: 20% / 20%;
+
+#home div.bubble-medium {
+  margin-top: 9%;
+  padding: 8px 12px 8px 12px;
+  margin-right: 20px; 
 }
-.buble-text {
-  font-size: 18px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  width: 100%;
-  color: #666;
-  padding: 10%;
+
+#home div.bubble-large {
+  padding: 20px 30px 20px 30px;
+  margin-top: 3%; 
+  max-width: 20%;
+  text-align: justify;
+  font-size: 14px;
 }
-.bub2 {
-  background: #fff;
-  width: 20px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  margin: 8px;
-  margin-top: 12px;
-  border-radius: 50% / 50%;
-  -moz-border-radius: 50% / 50%;
-  -wekit-border-radius: 50% / 50%;
+
+#home div.bubble-large p {
+  color: rgba(0, 0, 0, 0.701961);
+  margin: 5px 5px 5px 5px;
 }
-#home .vereb .box {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  /*background: #ccc;*/
-}
-#home .vereb .box:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-#home .vereb .col-xs-3, 
-#home .vereb .col-md4 {
-  padding-right: 0px;
-  padding-left: 0px;
+
+#home .rsvp {
+  color: blue;
 }
 
 #home h1 {
