@@ -283,12 +283,19 @@ footer .social-link a {
 
 
 /*************************
-******* Home CSS ********
+******* Home CSS ******** PALI
 **************************/
 
-#home {
-  margin-top: 18%;
+@media (max-width: 1199px) { /* kisebb képernyőn nincs veréb a számláló fölött !! */ 
+  #home {
+    margin-top: 18%;
+  }
 }
+
+/*
+  background-image: url('<%= asset_path "vereb.png" %>'));
+*/
+
 
 #home h1 {
   color: #FFFFFF;
