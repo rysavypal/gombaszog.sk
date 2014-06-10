@@ -39,7 +39,7 @@ if ($(".ticket-form").length > 0) {
     });
     if (e.email == "used") {
       alert("A megadott e-mail címet már használták egy jegyelővételhez! Minden megvásárolt jegyhez egyedi e-mail címet kell megadni!");
-    } else (e.email == "retry") {
+    } else if (e.email == "retry") {
       $("#ticket_email").removeClass("has-error");
       alert("Valamikor az elmúlt három órában már próbálkoztál egy jegyelővétellel, de nem jártál sikerrel. Az egyes újrapróbálkozások között minimum három órának kell eltelnie, tehát arra kérünk várd ki ezt az időt és később próbálkozz újra!");
     } else if (e.price) {
