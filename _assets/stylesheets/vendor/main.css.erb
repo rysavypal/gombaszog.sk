@@ -286,23 +286,74 @@ footer .social-link a {
 ******* Home CSS ******** PALI
 **************************/
 
-@media (max-width: 1199px) { /* kisebb képernyőn nincs veréb a számláló fölött !! */ 
+@media only screen and (max-width: 1024px) { /* kisebb képernyőn nincs veréb a számláló fölött !! | 1199 */ 
   #home {
     margin-top: 18%;
   }
 }
 
-/*
-  background-image: url('<%= asset_path "vereb.png" %>'));
-*/
 
+#home .vereb {
+  float: left;
+  width: 100%;
+}
+.madar {
+  background: url('<%= asset_path "vereb.png" %>') no-repeat;
+  background-size: 100% 100%;
+  padding-right: 5px;
+}
+.buble {
+  background: #fff;
+  border-radius: 20% / 20%;
+  -moz-border-radius: 20% / 20%;
+  -wekit-border-radius: 20% / 20%;
+}
+.buble-text {
+  font-size: 18px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  color: #666;
+  padding: 10%;
+}
+.bub2 {
+  background: #fff;
+  width: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 8px;
+  margin-top: 12px;
+  border-radius: 50% / 50%;
+  -moz-border-radius: 50% / 50%;
+  -wekit-border-radius: 50% / 50%;
+}
+#home .vereb .box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /*background: #ccc;*/
+}
+#home .vereb .box:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+#home .vereb .col-xs-3, 
+#home .vereb .col-md4 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
 
 #home h1 {
   color: #FFFFFF;
   font-size: 72px;
   font-weight: 800;
   text-transform: uppercase;
-  margin-top: 0px;
+  margin-top: -150px;
   
   text-shadow:
     3px 3px 0 #292e42,
