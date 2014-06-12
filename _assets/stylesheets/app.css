@@ -340,3 +340,11 @@ input.has-error {
     background: rgba(0, 151, 192, 0.4);
   }
 }
+
+.btn-pricing.disabled {
+  background-color: red;
+  pointer-events: none;
+  cursor: default;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
