@@ -9,6 +9,7 @@
  *= require vendor/instafeed
  *= require jegyek.js
  *= require zene.js
+ *= require sajto.js
  */
 
 
