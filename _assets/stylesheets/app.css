@@ -91,6 +91,27 @@
     width: 100%;
 }
 
+#sajto-pages.pagination {
+    float: right;
+    display: table;
+}
+
+#sajto-pages.pagination li a {
+    padding: 1px 10px;
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+#sajto-pages.pagination li:first-child a {
+    border-top-left-radius:.5em;
+    border-bottom-left-radius:.5em; 
+}
+
+#sajto-pages.pagination li:last-child a {
+    border-top-right-radius:.5em;
+    border-bottom-right-radius:.5em;
+}
+
 #ticket a.btn { 
   border-radius: 0px;
 }
