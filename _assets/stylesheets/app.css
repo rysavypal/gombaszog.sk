@@ -391,8 +391,16 @@ input.has-error {
 
 .extra-arak h3 {
   margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .extra-arak p {
-  font-size: 14px;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+.extra-arak span {
+  font-weight: bold;
+}
+.extra-arak .col-md-4 {
+  margin-bottom: 30px;
 }
