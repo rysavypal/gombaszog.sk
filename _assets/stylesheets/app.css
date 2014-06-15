@@ -388,3 +388,11 @@ input.has-error {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+
+.extra-arak h3 {
+  margin-top: 0px;
+}
+
+.extra-arak p {
+  font-size: 14px;
+}
