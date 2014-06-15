@@ -7,7 +7,26 @@
  *= require vendor/select2
  *= require vendor/select2-bootstrap
  */
+.strike {
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.strike:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: #ff0800;
 
+  -webkit-transform:rotate(-20deg);
+  -moz-transform:rotate(-20deg);
+  -ms-transform:rotate(-20deg);
+  -o-transform:rotate(-20deg);
+  transform:rotate(-20deg);
+}
 /* modal */
 .modal-content {
   position:relative;
