@@ -9,8 +9,10 @@
  */
 .strike {
   position: relative;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-bottom: 0px !important; 
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 30px !important;
 }
 .strike:before {
   position: absolute;
