@@ -12,43 +12,38 @@ group: jegyek
           <ul class="clearfix">
             <li class="regular">
               <div class="regular-price">
-                <h2>Napijegy<span>helyszínen</span></h2>
+                <h2>Sörjegy<span>interneten</span></h2>
                 <p class="price">&euro;10</p>
-                <p class="price-content">Egy napra<br> Tábor és koncertek</p>
+                <p class="price-content">Tizenegy sör<br />Tíz áráért</p>
               </div>
             </li>
             <li class="classic">
               <div class="regular-price">
-                <h2>Gyors <span>interneten</span></h2>
-                <p class="price">&euro;25*</p>
+                <h2>Koncert <span>helyszínen</span></h2>
+                <p class="price">&euro;6</p>
                 <p class="price-content">
-                  Hat napra<br/>
-                  Tábor és koncertek<br/>
-                  első 100 vevőnek
+                Egy nap<br/>Csak koncertek
                 </p>
-                <a class="btn btn-primary btn-pricing disabled">Elfogyott!</a>
               </div>
             </li>
             <li class="rock">
               <div class="regular-price">
-                <h2>Ügyes <span>interneten</span></h2>
+                <h2>Hetijegy <span>interneten</span></h2>
+                <p class="price strike">&euro;29</p>
                 <p class="price">&euro;27*</p>
                 <p class="price-content">
                   Hat napra<br/> 
                   Tábor és koncertek<br/>
-                  100 vevőnek
+                  *100 vevőnek
                 </p>
                 <a class="btn btn-primary btn-pricing">Jegyelővétel!</a>
               </div>
             </li>
             <li class="xplore">
               <div class="regular-price">
-                <h2>Hetijegy <span>interneten</span></h2>
-                <p class="price">&euro;29</p>
-                <p class="price-content">
-                  Hat napra<br/>
-                  Tábor és koncertek
-                </p>
+                <h2>Napijegy <span>helyszínen</span></h2>
+                <p class="price">&euro;10</p>
+                <p class="price-content">Egy napra<br> Tábor és koncertek</p>
               </div>
             </li>
             <li class="vip">
@@ -59,10 +54,44 @@ group: jegyek
               </div>
             </li>
           </ul>
-          <div class="pricing-content">
-            <p class="text-justified">A fenti jegyeken kívül vásárolható még <strong>sátorjegy</strong> (&euro;10/&euro;2) és többféle <strong>kajajegy</strong> (&euro;13/&euro;2.50 és &euro;15/&euro;3) akár a helyszínen is. Sátorjegyet csak a <strong>sátor tulajdonosának</strong> kell váltania, megéri tehát többen lakni egy sátorban. Internetes rendelés esetén váltható még oda-vissza jegy valamelyik <strong>partybuszunkra</strong> és foglalható szállás a faluban található <strong>panziókban</strong> (&euro;45/fő). A fennmaradó helyek számát mindkét esetben a lentebb található űrlapon ellenőrizhetitek.<br/>
-            A csillaggal jelölt internetes hetijegyek csak <strong>korlátozott számban</strong> kaphatóak. A rendszer mindig automatikusan legolcsóbb elérhető jegyet választja ki és számlázza, tehát először a &euro;25-ös, majd a &euro;27-es és végül a &euro;29-es jegyeket. Lehetőség lesz még a helyszínen <strong>koncertjegy</strong> (&euro;6) váltására, amely csak az aznap esti koncertekre biztosít belépést.</p>
-            <p class="text-justified roll-here">A jegyelővétel a <strong>PayPal</strong> rendszerét használja a fizetéshez, tehát szükséged lesz vagy egy PayPal fiókra, vagy pedig egy <strong>internetes fizetésre képes bankkártyára</strong>. Más fizetési módszereket (készpénz, átutalás, postai utalvány, stb) sajnos nem áll módunkban elfogadni. Nem működő bankkártya esetén az azt <strong>kibocsájtó banknál</strong> kaphatsz segítséget! A tranzakció egy bolti bankkártyás vásárláshoz hasonlítható, csupán <strong>néhány másodpercig</strong> tart és a jegyet kiváltó <strong>vonalkódos szelvény</strong> e-mailben való elküldésével ér véget.</p>
+          <div class="pricing-content extra-arak">
+            <div class="row" style="margin-bottom: 30px;">
+              <div class="col-xs-4 col-md-4">
+                <div class="pull-left">
+                  <i class="fa fa-cutlery fa-4x"></i>
+                </div>
+                <div class="col-xs-8 clearfix">
+                  <h3>Kajajegy</h3>
+                  <p>Reggeli+vacsora <span>&euro;13</span> (napi <span>&euro;2.50</span>)</p>
+                  <p>Ebéd <span>&euro;15</span> (napi <span>&euro;3</span>)</p>
+                </div>
+              </div>
+              <div class="col-xs-4 col-md-4">
+                <div class="pull-left">
+                  <i class="fa fa-eject fa-4x"></i>
+                </div>
+                <div class="col-xs-8 clearfix">
+                  <h3>Sátorjegy</h3>
+                  <p>Sátranként <span>&euro;10</span> (napi <span>&euro;2</span>)</p>
+                  <p>Csak a tulajdonosnak</p>
+                </div>
+              </div>
+              <div class="col-xs-4 col-md-4">
+                <div class="pull-left">
+                  <i class="fa fa-taxi fa-4x"></i>
+                </div>
+                <div class="col-xs-8 clearfix">
+                  <h3>Partybusz</h3>
+                  <p>Oda-vissza <span>&euro;26</span></p>
+                  <p>Csak interneten</p>
+                </div>
+              </div>
+            </div>
+            <!--
+            <div class="row">
+              <p class="text-justified roll-here">A jegyelővétel a <strong>PayPal</strong> rendszerét használja a fizetéshez, tehát szükséged lesz vagy egy PayPal fiókra, vagy pedig egy <strong>internetes fizetésre képes bankkártyára</strong>. Más fizetési módszereket (készpénz, átutalás, postai utalvány, stb) sajnos nem áll módunkban elfogadni. Nem működő bankkártya esetén az azt <strong>kibocsájtó banknál</strong> kaphatsz segítséget! A tranzakció egy bolti bankkártyás vásárláshoz hasonlítható, csupán <strong>néhány másodpercig</strong> tart és a jegyet kiváltó <strong>vonalkódos szelvény</strong> e-mailben való elküldésével ér véget.</p>
+            </div>
+            -->
           </div>
           <div class="ticket-hidden" style="display: block;">
             <h2 class="text-center" style="padding-bottom: 1em;">A jegyelővétel megkezdéséhez válassz egy kitöltési opciót:</h2>
@@ -114,7 +143,7 @@ group: jegyek
                   </div>
                   <div class="form-group">
                     <label for="ticket_email">E-mail <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Fontos, hogy valós e-mail címet adj meg, mert erre küldjük el a jegyedet! Egy elővételhez csak egy a-mail cím használható!"></i></label>
-                    <input type="email" class="form-control" id="ticket_email" placeholder="" name="ticket[email]"/>
+                    <input type="email" class="form-control" id="ticket_email" placeholder="Ide küldjük a jegyed!" name="ticket[email]"/>
                   </div>
                   <div class="form-group">
                     <label for="ticket_phone">Telefonszám <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Országkóddal teljes formájában, például +421901234567"></i></label>
@@ -347,7 +376,7 @@ group: jegyek
                     <input type="text" class="form-control" id="ticket_voucher" placeholder="" name="ticket[voucher]"/>
                   </div>
                   <div class="form-group">
-                    <label class="control-label" for="ticket_captcha">Megerősítő kód <i class="fa fa-refresh re-captcha"></i></a></label>
+                    <label class="control-label" for="ticket_captcha">Megerősítő kód <i class="fa fa-info-circle info-tooltip re-captcha" data-toggle="tooltip" data-placement="bottom" title="Az alábbi mezőbe a képen található kódot kell bemásolni. Ha a szöveg nem lenne olvasható, kattints és kapsz újat!"></i></label>
                     <input type="text" class="form-control" id="ticket_captcha" placeholder="" name="ticket[captcha]" style="background-size: 120px; background-position: right center; background-repeat: no-repeat;"/>
                   </div>                  
                 </div>
@@ -515,10 +544,11 @@ group: jegyek
               <div class="row">
                 <div class="col-md-9">
                   <p class="justified"><small>
-                    A feltüntetett jegyár  <strong>nem tartalmazza</strong> a különböző akciókból adódó kedvezményeket. Ha ingyenes kuponnal rendelkezel, ingyenes településen laksz, vagy két új táborlakót hoztál nekünk, akkor a tényleges akciós jegyárat csak a Tovább gombra kattintás után kapod meg. Ha először fizetsz így bankkártyával, olvasd el <a href="/2014/06/09/vigyazz-kesz-indul-a-jegyvasar/#leiras" target="_blank">leírásunkat</a> a jegyelővétel menetéről! 
+                   A jegyeket a <strong>PayPal</strong> felületén bankkártyával vagy PayPal számlával lehet kifizetni. Más fizetési módszert (készpénz, átutalás, stb) nem tudunk elfogadni. A fizetéshez a kártyán szereplő számokat kell megadni, csupán <strong>néhány másodpercig tart</strong>, a jegyet pedig <strong>a megadott e-mail címre</strong> küldjük. Ha kérdésed van, vagy akadályba ütköztél a fizetés során, olvasd el <a href="/2014/06/09/vigyazz-kesz-indul-a-jegyvasar/#leiras" target="_blank">leírásunkat</a> a jegyelővétel menetéről, vagy írj nekünk a <strong>jegyek [kukac] gombaszog [pont] sk</strong> e-mail címre!<br/><br/>
+                   Ha kedvezményes kuponnal rendelkezel, ingyenes településen laksz, vagy két új táborlakót hoztál, akkor az akciós jegyárral számolt összeg csak a <strong>"Tovább"</strong> gombra való kattintás után jelenik meg. 
                   </small></p> 
                   <p class="justified"><small>
-                    A <strong>"Tovább"</strong> gombra való kattintással <strong>elfogadod és tudomásul veszed</strong> az <a href="#aszf" data-toggle="modal" data-target="#aszf">általános szerződési feltételeinket</a>. Ha a jegyelővétel során problémába ütközöl, vagy elakadsz és segítségre van szükséged, írj nekünk az jegyek [kukac] gombaszog [pont] sk e-mail címre!
+                    A <strong>"Tovább"</strong> gombra való kattintással <strong>elfogadod és tudomásul veszed</strong> az <a href="#aszf" data-toggle="modal" data-target="#aszf">általános szerződési feltételeinket</a>.
                   </small></p>
                 </div>
                 <div class="col-md-3">

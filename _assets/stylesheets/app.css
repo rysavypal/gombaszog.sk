@@ -7,7 +7,28 @@
  *= require vendor/select2
  *= require vendor/select2-bootstrap
  */
+.strike {
+  position: relative;
+  margin-bottom: 0px !important; 
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 30px !important;
+}
+.strike:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: #ff0800;
 
+  -webkit-transform:rotate(-20deg);
+  -moz-transform:rotate(-20deg);
+  -ms-transform:rotate(-20deg);
+  -o-transform:rotate(-20deg);
+  transform:rotate(-20deg);
+}
 /* modal */
 .modal-content {
   position:relative;
@@ -368,4 +389,17 @@ input.has-error {
   cursor: default;
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+.extra-arak h3 {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.extra-arak p {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+.extra-arak span {
+  font-weight: bold;
 }
