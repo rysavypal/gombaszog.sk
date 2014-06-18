@@ -57,7 +57,7 @@ if ($(".ticket-form").length > 0) {
     });
     // scroller 
     $('.btn-pricing').click(function() {
-      $('body').animate({
+      $('body,html').animate({
         scrollTop: $('.roll-here').offset().top
       }, "slow");
     });   
