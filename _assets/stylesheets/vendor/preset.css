@@ -135,30 +135,37 @@ button:hover,
   background-color: rgba(0,192,245,0.8);
 }
 
+.gyoztes1 .album-info {background: rgba(26, 188, 156, 0.7)!important;}
 #dalnap .col-md-4:nth-child(1) .single-album .album-heading,
 .col-lg-6:nth-child(1) .single-album .album-overlay .album-info,
 .col-md-4:nth-child(1) .single-album .album-overlay .album-info 
 {background: rgba(26, 188, 156, 0.7);}
+.gyoztes2 .album-info {background: rgba(211, 84, 0, 0.7)!important;}
 #dalnap .col-md-4:nth-child(2) .single-album .album-heading,
 .col-lg-6:nth-child(2) .single-album .album-overlay .album-info,
 .col-md-4:nth-child(2) .single-album .album-overlay .album-info  
 {background: rgba(211, 84, 0, 0.7);}
+.gyoztes3 .album-info {background: rgba(52, 152, 219, 0.7)!important;}
 #dalnap .col-md-4:nth-child(3) .single-album .album-heading,
 .col-lg-6:nth-child(3) .single-album .album-overlay .album-info,
 .col-md-4:nth-child(3) .single-album .album-overlay .album-info  
 {background: rgba(52, 152, 219, 0.7);}
+.gyoztes4 .album-info {background: rgba(155, 89, 182, 0.7)!important;}
 #dalnap .col-md-4:nth-child(4) .single-album .album-heading,
 .col-lg-6:nth-child(4) .single-album .album-overlay .album-info,
 .col-md-4:nth-child(4) .single-album .album-overlay .album-info  
 {background: rgba(155, 89, 182, 0.7);}
+.gyoztes5 .album-info {background: rgba(241, 196, 15, 0.7)!important;}
 #dalnap .col-md-4:nth-child(5) .single-album .album-heading,
 .col-lg-6:nth-child(5) .single-album .album-overlay .album-info,
 .col-md-4:nth-child(5) .single-album .album-overlay .album-info  
 {background: rgba(241, 196, 15, 0.7);}
+.gyoztes6 .album-info {background: rgba(230, 126, 34, 0.7)!important;}
 #dalnap .col-md-4:nth-child(6) .single-album .album-heading,
 .col-lg-6:nth-child(6) .single-album .album-overlay .album-info,
 .col-md-4:nth-child(6) .single-album .album-overlay .album-info  
 {background: rgba(230, 126, 34, 0.7);}
+.gyoztes7 .album-info {background: rgba(231, 76, 60, 0.7)!important;}
 #dalnap .col-md-4:nth-child(7) .single-album .album-heading,
 .col-lg-6:nth-child(7) .single-album .album-overlay .album-info,
 .col-md-4:nth-child(7) .single-album .album-overlay .album-info  
