@@ -57,10 +57,10 @@
     margin-top: 60px;
   }
 }
-#dalnap2 .album-heading,
+
 #dalnap .album-heading,
 .press .album-heading {
-    bottom: 0px;
+  bottom: 0px;
   left: 0;
   padding: 15px;
   padding-bottom: 5px;
@@ -75,30 +75,20 @@
     1px  1px 0 #292e42;
 }
 
-#dalnap2 .album-heading,
 #dalnap .album-heading {
   padding-bottom: 3px;
   padding-top: 3px;
   margin-bottom: 5px;
 }
 
-#dalnap2 .album-heading h3,
 #dalnap .album-heading h3 { 
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 1.6vw; 
 }
 
-#dalnap2 .album-overlay .album-info,
 #dalnap .album-overlay .album-info {
   padding-top: 100px;
-}
-
-#dalnap2 .album-overlay .album-info h3,
-#dalnap2 .album-overlay .album-info h4,
-#dalnap .album-overlay .album-info h3,
-#dalnap .album-overlay .album-info h4 {
-  font-size: 24px;
 }
 
 #dalnap .album-overlay .album-info h4 a:hover,
@@ -409,4 +399,9 @@ input.has-error {
 }
 .extra-arak span {
   font-weight: bold;
+}
+
+#dalnap .album-heading h3,
+#dalnap .album-heading h4 {
+  margin-bottom: 10px;
 }
