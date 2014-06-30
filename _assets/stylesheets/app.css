@@ -7,6 +7,9 @@
  *= require vendor/select2
  *= require vendor/select2-bootstrap
  */
+ .mediap .row { margin-bottom: 10px;}
+ .szerv, .tarsszerv { margin-bottom: 15px;}
+
 .strike {
   position: relative;
   margin-bottom: 0px !important; 
