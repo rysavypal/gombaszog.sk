@@ -7,8 +7,46 @@
  *= require vendor/select2
  *= require vendor/select2-bootstrap
  */
- .mediap .row { margin-bottom: 10px;}
- .szerv, .tarsszerv { margin-bottom: 15px;}
+ .mediap .row 
+ { 
+  margin-bottom: 10px;
+ }
+ 
+ .tarsszerv .row .col-md-3,
+ .tarsszerv .row .col-md-6,
+ .tarsszerv .row .col-sm-6, 
+ .tarsszerv .row .col-xs-12
+{
+  margin-bottom: 8px !important;
+}
+
+ .mediap .row .col-md-4,
+ .mediap .row .col-sm-6, 
+ .mediap .row .col-xs-12 
+{
+  margin-bottom: 8px !important;
+}
+ .tarsszerv .row .col-xs-12 a,
+ .tarsszerv .row .col-xs-12 img,
+ .mediap .row .col-xs-12 a,
+ .mediap .row .col-xs-12 img
+ {
+  display: block;
+ }
+
+ .tarsszerv .row .col-xs-12 a img,
+ .tarsszerv .row .col-xs-12 img,
+ .mediap .row .col-xs-12 a img,
+ .mediap .row .col-xs-12 img
+ {
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .szerv, .tarsszerv 
+ { 
+  margin-bottom: 15px;
+ }
 
 .strike {
   position: relative;
