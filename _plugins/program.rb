@@ -1,5 +1,6 @@
 require 'net/http'
 require 'json'
+require 'nokogiri'
 
 class ProgramTag < Liquid::Tag
 
@@ -39,26 +40,26 @@ class ProgramTag < Liquid::Tag
       end
     end
 
-    str = '<div class="program">';
-    datab.sort.map do |k, v|
-      str += '<div class="program-nap">'
-      str += '<div class="program-datum">'+"#{day_l_map[Time.parse(k).strftime('%A')]}"+'</div>'
-      str += '<div class="program-tabla">'
-      v.sort_by{ |bb| bb['start']+bb['end'] }.each do |d|
-        str += '<div class="program-sor">'
-        str += '<div class="program-ido">' + "#{Time.parse(d['start']).strftime('%k:%M')} - #{Time.parse(d['end']).strftime('%k:%M')}</div>"
-        str += '<div class="program-nev">' + "#{d['name']}</div>"
-        str += '<div class="program-helyszin">' + "#{locations[d['location_id']]}</div>"
-        str += '</div>'
-      end
-      str += "</div>"
-      str += "</div>"
+    @html = Nokogiri::HTML::DocumentFragment.parse ""
+    Nokogiri::HTML::Builder.with(@html) do |html|
+        html.div.Option("class" => "program") {
+          datab.sort.map do |k,v|
+            html.div(:class => "program-nap") {
+              html.div(:class => "program-datum") { html.text day_l_map[Time.parse(k).strftime('%A')] }
+              html.div(:class => "program-tabla") {
+                v.sort_by { |bb| bb['start']+bb['end'] }.each do |d|
+                  html.div(:class => "program-sor") {
+                    html.div(:class => 'program-ido') { html.text "#{Time.parse(d['start']).strftime('%k:%M')} - #{Time.parse(d['end']).strftime('%k:%M')}"}
+                    html.div(:class => 'program-nev') { html.text "#{d['name']}" }
+                    html.div(:class => 'program-helyszin') { html.text "#{locations[d['location_id']]}" }
+                  }
+                end
+              }
+            }
+          end
+        }
     end
-    str += '</div>';
-
-    str
+    @html.to_html
   end
-
   Liquid::Template.register_tag('dyn_program', self)
-
 end
