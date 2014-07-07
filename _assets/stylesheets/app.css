@@ -185,6 +185,14 @@
 }
 
 /* Program */
+/*#latest-event-content .bg ul.nav li:nth-child(2),
+#latest-event-content .bg ul.nav li:nth-child(3),
+#latest-event-content .bg ul.nav li:nth-child(4),
+#latest-event-content .bg ul.nav li:nth-child(5),
+#latest-event-content .bg ul.nav li:nth-child(6),
+#latest-event-content .bg ul.nav li:nth-child(7) 
+{ margin-left: 5px !important;}*/
+
 .program-sor {
   display: block;
   width: 100%;
@@ -216,13 +224,38 @@
   padding: 0px;
 }
 
+.program .col-md-10 .color_1 {
+  background: rgba(241,196,15, 0.7);
+}
+.program .col-md-10 .color_2 {
+  background: rgba(211,84,0, 0.7);
+}
+
 .program .nav-pills>li a {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .program .nav-stacked>li+li {
   margin-top:5px;
   margin-left:0;
+}
+.programpont {
+  margin-bottom: 10px;
+}
+.programpont .szervezo {
+  float: left;
+  width: 80%;
+}
+.programpont .col-md-2 span, 
+.programpont .szervezo span {
+  font-weight: bold;
+}
+.programpont .col-md-3 img {
+  margin-top: 5px;
+}
+.programpont .col-md-7 h2 {
+  margin-top: 0px;
 }
 
 /* program END */
