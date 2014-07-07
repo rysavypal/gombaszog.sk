@@ -10,7 +10,38 @@ group: program
           <div id="latest-event-content" class="col-sm-12 col-md-12">
             <div class="bg">
               <h2 class="heading"><strong>Program</strong></h2>
-              <p>Hamarosan ...</p>
+              <!-- {% dyn_program %} -->
+              <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="active"><a href="#kedd" role="tab" data-toggle="tab">Kedd</a></li>
+                <li><a href="#szerda" role="tab" data-toggle="tab">Szerda</a></li>
+                <li><a href="#csutortok" role="tab" data-toggle="tab">Csütörtök</a></li>
+                <li><a href="#pentek" role="tab" data-toggle="tab">Péntek</a></li>
+                <li><a href="#szombat" role="tab" data-toggle="tab">Szombat</a></li>
+                <li><a href="#vasarnap" role="tab" data-toggle="tab">Vasárnap</a></li>
+                <li><a href="#hetfo" role="tab" data-toggle="tab">Hétfő</a></li>
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content program-matrix">
+                <div class="tab-pane row active" id="kedd">
+                  <div class="col-md-3 visible-md visible-lg">
+                    <ul class="nav nav-pills nav-stacked">
+                      <li class="active"><a href="#">Sárga Szamár sátor</a></li>
+                      <li class="active"><a href="#">Kissátor</a></li>
+                      <li><a href="#">Várdomb</a></li>
+                      <li><a href="#">Kávéház</a></li>
+                      <li><a href="#">Szalmaszínház</a></li>
+                  </div>
+                  <div class="col-md-9">
+                    kontent
+                  </div>
+                </div>
+                <div class="tab-pane row" id="szerda">SZERDA</div>
+                <div class="tab-pane row" id="csutortok">CSÜTÖRTÖK</div>
+                <div class="tab-pane row" id="pentek">PÉNTEK</div>
+                <div class="tab-pane row" id="szombat">SZOMBAT</div>
+                <div class="tab-pane row" id="vasarnap">VASÁRNAP</div>
+                <div class="tab-pane row" id="hetfo">HÉTFŐ</div>
+              </div>
             </div>                     
           </div>
         </div>              
