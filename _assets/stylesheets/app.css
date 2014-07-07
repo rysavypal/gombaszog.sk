@@ -244,16 +244,19 @@
   margin-bottom: 10px;
 }
 .programpont .idopont {
-  font-size: 16px;
+  font-size: 18px;
+  padding-top: 5px;
 }
-.programpont .idopont span 
-/*.programpont .szervezo span*/ {
+.programpont .idopont span {
   font-weight: bold;
   font-size: 18px;
+  line-height: 24px;
 }
 
 .programpont .col-md-2 img {
   vertical-align: middle;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .programpont h3 {
@@ -262,6 +265,55 @@
 }
 .programpont p {
   font-size: 16px;
+}
+
+.programpont em {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#latest-event-content .nav-tabs>li {
+  padding-right: 5px;
+}
+#latest-event-content .nav-tabs>li:last-child {
+  padding-left: 0px;
+}
+#latest-event-content .nav-tabs>li>a  {
+  border-radius: 0px;
+  background: transparent;
+}
+#latest-event-content .nav-tabs>li:nth-child(1)>a  {
+  background: rgba(26, 188, 156, 0.5);
+  color: #fff;
+}
+#latest-event-content .nav-tabs>li:nth-child(2)>a  {
+  background: rgba(211, 84, 0, 0.5);
+  color: #fff;
+}
+#latest-event-content .nav-tabs>li:nth-child(3)>a  {
+  background: rgba(52, 152, 219, 0.5);
+  color: #fff;
+}
+#latest-event-content .nav-tabs>li:nth-child(4)>a  {
+  background: rgba(155, 89, 182, 0.5);
+  color: #fff;
+}
+#latest-event-content .nav-tabs>li:nth-child(5)>a  {
+  background: rgba(241, 196, 15, 0.5);
+  color: #fff;
+}
+#latest-event-content .nav-tabs>li:nth-child(6)>a  {
+  background: rgba(230, 126, 34, 0.5);
+  color: #fff;
+}
+#latest-event-content .nav-tabs>li:nth-child(7)>a  {
+  background: rgba(231, 76, 60, 0.5);
+  color: #fff;
+}
+#latest-event-content .nav-tabs>li>a:hover,
+#latest-event-content .nav-tabs>li>a.active {
+  background: rgba(192, 57, 43, 1.0);
+  color: #000;
 }
 
 /* program END */
