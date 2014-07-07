@@ -232,7 +232,7 @@
 }
 
 .program .nav-pills>li a {
-  font-size: 15px;
+  font-size: 0.9vw;
   font-weight: bold;
 }
 
@@ -246,7 +246,7 @@
 }
 .programpont .idopont {
   font-size: 18px;
-  padding-top: 5px;
+  padding-top: 18px;
   padding-right: 0px;
 }
 
@@ -271,7 +271,7 @@
 }
 
 .programpont em {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 20px;
 }
 
@@ -285,12 +285,14 @@
   border-radius: 0px;
   background: rgba(39, 174, 96, 0.4);
   color: #fff;
+  border: 0px;
 }
 
 #latest-event-content .nav-tabs>li>a:hover,
-#latest-event-content .nav-tabs>li>a.active {
-  background: rgba(192, 57, 43, 1.0);
+#latest-event-content .nav-tabs>li.active>a {
+  background: rgba(192, 57, 43, 1.0) !important;
   color: #000;
+  border: 0px;
 }
 
 .program .nav-pills>li>a {
@@ -299,7 +301,7 @@
   border-radius: 0px;
 }
 .program .nav-pills>li>a:hover,
-.program .nav-pills>li>a.active {
+.program .nav-pills>li.active>a {
   color:#fff;
   background-color:#428bca !important;
 }
@@ -500,8 +502,29 @@ input.has-error {
   background-color: #FFCCCC;
 }
 
+@media only screen and (max-width: 1366px) {
+  .program .nav-pills>li a {
+  font-size: 1vw;
+  font-weight: bold;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .program .nav-pills>li a {
+  font-size: 1.1vw;
+  font-weight: bold;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .program .nav-pills>li a {
+  font-size: 1.2vw;
+  font-weight: bold;
+  }
+}
 @media only screen and (max-width: 768px) {
-  
+  .program .nav-pills>li a {
+  font-size: 1vw;
+  font-weight: bold;
+  }
    .nav > li {
     margin-bottom: 1px;
     padding-bottom: 0px;
