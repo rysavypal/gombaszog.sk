@@ -184,6 +184,7 @@
     border-bottom-right-radius:.5em;
 }
 
+/* Program */
 .program-sor {
   display: block;
   width: 100%;
@@ -210,6 +211,21 @@
 .program-helyszin {
   float: right;
 }
+
+.program .nav-pills>li {
+  padding: 0px;
+}
+
+.program .nav-pills>li a {
+  font-size: 14px;
+}
+
+.program .nav-stacked>li+li {
+  margin-top:5px;
+  margin-left:0;
+}
+
+/* program END */
 
 #ticket a.btn { 
   border-radius: 0px;
