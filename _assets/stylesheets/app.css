@@ -244,17 +244,22 @@
   margin-bottom: 10px;
 }
 .programpont .szervezo {
-  float: left;
-  width: 80%;
+-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin-top: 25px;
 }
-.programpont .col-md-2 span, 
-.programpont .szervezo span {
+.programpont .col-md-2 span 
+/*.programpont .szervezo span*/ {
   font-weight: bold;
 }
-.programpont .col-md-3 img {
-  margin-top: 5px;
+.programpont .col-md-2 img {
+  vertical-align: middle;
 }
-.programpont .col-md-7 h2 {
+
+.programpont h2 {
   margin-top: 0px;
 }
 
