@@ -243,24 +243,25 @@
 .programpont {
   margin-bottom: 10px;
 }
-.programpont .szervezo {
--webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    margin-top: 25px;
+.programpont .idopont {
+  font-size: 16px;
 }
-.programpont .col-md-2 span 
+.programpont .idopont span 
 /*.programpont .szervezo span*/ {
   font-weight: bold;
+  font-size: 18px;
 }
+
 .programpont .col-md-2 img {
   vertical-align: middle;
 }
 
-.programpont h2 {
-  margin-top: 0px;
+.programpont h3 {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.programpont p {
+  font-size: 16px;
 }
 
 /* program END */
