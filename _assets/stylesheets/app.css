@@ -186,74 +186,66 @@
 
 /* Program */
 
-.program-sor {
-  display: block;
-  width: 100%;
-  clear: both;
-}
-.program-datum {
-  font-size: 2em !important;
-  font-weight: bold;
-  clear: both;
-  margin-top: 5%;
-}
-.program-ido {
-  text-align: right;
-  margin-right: 10px;
-  float: left;
-  width: 10%;
-}
 
-.program-nev {
-  float: left;
-  font-weight: bold;
-}
-
-.program-helyszin {
-  float: right;
-}
 
 .program .nav-pills>li {
   padding: 0px;
 }
 /* Program szinek */
 
-.row.programpont.color_3 {
+.program-pont {
+   color: rgb(25, 22, 22);
+}
+
+.program-pont p {
+  font-size: smaller;
+  text-align: justify;
+}
+
+.program-pont .meta {
+  font-size: smaller;
+  margin-top: 20px;
+}
+
+.program-pont .meta .idopont {
+  font-weight: bold;
+}
+
+.program-pont .meta .szervezo {
+  font-style: italic;
+}
+
+.program-pont img {
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.program-pont.color-3 {
     background: rgba(226, 255, 243, 0.95);
     border-left: rgb(127, 183, 255) solid 5px;
 }
 
-.row.programpont.color_4 {
+.program-pont.color-4 {
     background: rgba(255, 248, 218, 0.95);
     border-left: rgb(197, 154, 44) solid 5px;
 }
 
-.row.programpont.color_5 {
+.program-pont.color-5 {
     background: rgba(212, 250, 223, 0.95);
     border-left: rgb(56, 180, 71) solid 5px;
 }
 
-.row.programpont.color_6 {
+.program-pont.color-6 {
     background: rgba(255, 223, 254, 0.95);
     border-left: rgb(167, 20, 161) solid 5px;
 }
 
-.row.programpont.color_7 {
+.program-pont.color-7 {
     background: rgba(231, 255, 245, 0.9);
     border-left: rgb(56, 99, 153) solid 5px;
 }
 
-.row.programpont {
-    color: rgb(25, 22, 22);
-}
-
 /* END */
-.program .col-md-10 .color_1 {
-  background: rgba(241,196,15, 0.7);
-}
-.program .col-md-10 .color_2 {
-  background: rgba(211,84,0, 0.7);
-}
 
 .program .nav-pills>li a {
   font-size: 0.9vw;
@@ -264,78 +256,6 @@
   margin-top:5px;
   margin-left:0;
 }
-.programpont {
-  margin-bottom: 10px;
-  margin-right: 5px;
-}
-.programpont .idopont {
-  font-size: 18px;
-  padding-top: 18px;
-  padding-right: 0px;
-}
-
-.programpont .idopont span {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.programpont .col-md-2 img {
-  vertical-align: middle;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
-.programpont h3 {
-  
-  font-weight: bold;
-}
-.programpont p {
-  font-size: 16px;
-}
-
-.programpont em {
-  font-size: 1em;
-  line-height: 20px;
-}
-
-.idoopont {
-    font-weight: bold;
-}
-
-h3.programcim {
-    margin: 17px 0 5px 0;
-    font-size: 20pt;
-}
-
-.col-md-2.visible-md.visible-lg.logo {
-    padding-left: 6%;
-}
-
-.szervezo {
-    font-size: smaller; font-style: italic; line-height: 1.2;
-}
-
-.helyszin {
-    font-size: smaller;
-}
-
-.leiras {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: justify;
-}
-
-.row.programcimsav {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.programcimsav p {
-    text-align: justify;
-}
-
 
 #latest-event-content .nav-tabs>li {
   padding-right: 5px;
