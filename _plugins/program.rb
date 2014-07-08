@@ -39,9 +39,11 @@ class ProgramTag < Liquid::Tag
           html.div(:class => first, :id => day_l_map[d]) do 
             first = 'tab-pane row'
             html.div(:class => 'col-md-2 visible-md visible-lg') do
-              html.ul(:class => 'nav nav-pills nav-stacked') do
+              html.ul(:class => 'nav nav-pills nav-stacked filter') do
+                i = 0
                 l[:locations].each do |loc|
-                  html.li(:class => 'active') { html.a(:href => '#') { html.text loc }}
+                  html.li(:class => "active", 'data-toggle' => "#{day_l_map[d]}_#{i}") { html.a(:href => '#') { html.text loc }}
+                  i+=1
                 end
               end
             end
@@ -49,7 +51,8 @@ class ProgramTag < Liquid::Tag
               l[:events].each do |e|
                 e['start'] = Time.parse e['start']
                 e['end'] = Time.parse e['end']
-                html.div(:class => 'program-pont row') do 
+                location_class = day_l_map[d] + '_' + l[:locations].index(e['location']).to_s
+                html.div(:class => 'program-pont row '+location_class) do 
                   html.div(:class => 'row') do
                     html.div(:class => 'col-md-10') do
                       html.div(:class => 'col-md-2 meta') do
