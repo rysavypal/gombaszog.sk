@@ -270,7 +270,9 @@
   border: 0px;
 }
 
-#latest-event-content .nav-tabs>li>a:hover,
+#latest-event-content .nav-tabs>li>a:hover {
+  text-shadow: 0 0 5px #ff0000; /* dogozza */
+}
 #latest-event-content .nav-tabs>li.active>a {
   background: rgba(192, 57, 43, 1.0) !important;
   color: #000;
@@ -282,7 +284,9 @@
   color:#fff;
   border-radius: 0px;
 }
-.program .nav-pills>li>a:hover,
+.program .nav-pills>li>a:hover {
+  text-shadow: 0 0 5px #ff0000; /* dogozza */
+}
 .program .nav-pills>li.active>a {
   color:#fff;
   background-color:#428bca !important;
