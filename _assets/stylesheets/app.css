@@ -185,13 +185,6 @@
 }
 
 /* Program */
-/*#latest-event-content .bg ul.nav li:nth-child(2),
-#latest-event-content .bg ul.nav li:nth-child(3),
-#latest-event-content .bg ul.nav li:nth-child(4),
-#latest-event-content .bg ul.nav li:nth-child(5),
-#latest-event-content .bg ul.nav li:nth-child(6),
-#latest-event-content .bg ul.nav li:nth-child(7) 
-{ margin-left: 5px !important;}*/
 
 .program-sor {
   display: block;
@@ -223,7 +216,38 @@
 .program .nav-pills>li {
   padding: 0px;
 }
+/* Program szinek */
 
+.row.programpont.color_3 {
+    background: rgba(226, 255, 243, 0.95);
+    border-left: rgb(127, 183, 255) solid 5px;
+}
+
+.row.programpont.color_4 {
+    background: rgba(255, 248, 218, 0.95);
+    border-left: rgb(197, 154, 44) solid 5px;
+}
+
+.row.programpont.color_5 {
+    background: rgba(212, 250, 223, 0.95);
+    border-left: rgb(56, 180, 71) solid 5px;
+}
+
+.row.programpont.color_6 {
+    background: rgba(255, 223, 254, 0.95);
+    border-left: rgb(167, 20, 161) solid 5px;
+}
+
+.row.programpont.color_7 {
+    background: rgba(231, 255, 245, 0.9);
+    border-left: rgb(56, 99, 153) solid 5px;
+}
+
+.row.programpont {
+    color: rgb(25, 22, 22);
+}
+
+/* END */
 .program .col-md-10 .color_1 {
   background: rgba(241,196,15, 0.7);
 }
@@ -274,6 +298,44 @@
   font-size: 1em;
   line-height: 20px;
 }
+
+.idoopont {
+    font-weight: bold;
+}
+
+h3.programcim {
+    margin: 17px 0 5px 0;
+    font-size: 20pt;
+}
+
+.col-md-2.visible-md.visible-lg.logo {
+    padding-left: 6%;
+}
+
+.szervezo {
+    font-size: smaller; font-style: italic; line-height: 1.2;
+}
+
+.helyszin {
+    font-size: smaller;
+}
+
+.leiras {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+.row.programcimsav {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.programcimsav p {
+    text-align: justify;
+}
+
 
 #latest-event-content .nav-tabs>li {
   padding-right: 5px;
