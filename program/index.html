@@ -10,7 +10,18 @@ group: program
           <div id="latest-event-content" class="col-sm-12 col-md-12">
             <div class="bg">
               <h2 class="heading"><strong>Program</strong></h2>
-              <p>Hamarosan ...</p>
+              <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="active"><a href="#kedd" role="tab" data-toggle="tab">Kedd</a></li>
+                <li><a href="#szerda" role="tab" data-toggle="tab">Szerda</a></li>
+                <li><a href="#csutortok" role="tab" data-toggle="tab">Csütörtök</a></li>
+                <li><a href="#pentek" role="tab" data-toggle="tab">Péntek</a></li>
+                <li><a href="#szombat" role="tab" data-toggle="tab">Szombat</a></li>
+                <li><a href="#vasarnap" role="tab" data-toggle="tab">Vasárnap</a></li>
+                <li><a href="#hetfo" role="tab" data-toggle="tab">Hétfő</a></li>
+              </ul>
+              <div class="tab-content program">
+                {% dyn_program %}
+              </div>
             </div>                     
           </div>
         </div>              

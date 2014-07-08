@@ -184,6 +184,116 @@
     border-bottom-right-radius:.5em;
 }
 
+/* Program */
+
+.program .nav-pills>li {
+  padding: 0px;
+}
+/* Program szinek */
+
+.program-pont {
+   color: rgb(25, 22, 22);
+   margin-bottom: 10px;
+}
+
+.program-pont p {
+  font-size: smaller;
+  text-align: justify;
+}
+
+.program-pont .meta {
+  font-size: smaller;
+  margin-top: 20px;
+}
+
+.program-pont .meta .idopont {
+  font-weight: bold;
+}
+
+.program-pont .meta .szervezo {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.program-pont img {
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.program-pont:nth-child(5n+1) {
+  background: rgba(226, 255, 243, 0.95);
+  border-left: rgb(127, 183, 255) solid 5px;
+}
+
+.program-pont:nth-child(5n+2) {
+  background: rgba(255, 248, 218, 0.95);
+  border-left: rgb(197, 154, 44) solid 5px;
+}
+
+.program-pont:nth-child(5n+3) {
+  background: rgba(231, 255, 245, 0.9);
+  border-left: rgb(56, 99, 153) solid 5px;
+}
+
+.program-pont:nth-child(5n+4) {
+  background: rgba(255, 223, 254, 0.95);
+  border-left: rgb(167, 20, 161) solid 5px;
+}
+
+.program-pont:nth-child(5n+0) {
+  background: rgba(212, 250, 223, 0.95);
+  border-left: rgb(56, 180, 71) solid 5px;
+}
+
+/* END */
+
+.program .nav-pills>li a {
+  font-size: 0.9vw;
+  font-weight: bold;
+}
+
+.program .nav-stacked>li+li {
+  margin-top:5px;
+  margin-left:0;
+}
+
+#latest-event-content .nav-tabs>li {
+  padding-right: 5px;
+}
+#latest-event-content .nav-tabs>li:last-child {
+  padding-left: 0px;
+}
+#latest-event-content .nav-tabs>li>a  {
+  border-radius: 0px;
+  background: rgba(39, 174, 96, 0.4);
+  color: #fff;
+  border: 0px;
+}
+
+#latest-event-content .nav-tabs>li>a:hover {
+  text-shadow: 0 0 5px #ff0000; /* dogozza */
+}
+#latest-event-content .nav-tabs>li.active>a {
+  background: rgba(192, 57, 43, 1.0) !important;
+  color: #000;
+  border: 0px;
+}
+
+.program .nav-pills>li>a {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color:#fff;
+  border-radius: 0px;
+}
+.program .nav-pills>li>a:hover {
+  text-shadow: 0 0 5px #ff0000; /* dogozza */
+}
+.program .nav-pills>li.active>a {
+  color:#fff;
+  background-color:#428bca !important;
+}
+
+/* program END */
+
 #ticket a.btn { 
   border-radius: 0px;
 }
@@ -378,8 +488,29 @@ input.has-error {
   background-color: #FFCCCC;
 }
 
+@media only screen and (max-width: 1366px) {
+  .program .nav-pills>li a {
+  font-size: 1vw;
+  font-weight: bold;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .program .nav-pills>li a {
+  font-size: 1.1vw;
+  font-weight: bold;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .program .nav-pills>li a {
+  font-size: 1.2vw;
+  font-weight: bold;
+  }
+}
 @media only screen and (max-width: 768px) {
-  
+  .program .nav-pills>li a {
+  font-size: 1vw;
+  font-weight: bold;
+  }
    .nav > li {
     margin-bottom: 1px;
     padding-bottom: 0px;

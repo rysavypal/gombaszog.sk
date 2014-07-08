@@ -51,6 +51,15 @@ jQuery(document).ready(function($){
         template: '<li style="background-image:url({'+'{image}'+'});"><a href="{'+'{link}'+'}" target=_blank>&nbsp;</a></li>',
         userId: 192561160
     }).run();
+
+
+    $(".program .filter li a").click(function(e) {
+      e.preventDefault();
+      li = $(this).parent();
+      li.toggleClass('active');
+      $('div.program-pont.'+li.data("toggle")).toggle();
+    });
+
   });
 });
 
