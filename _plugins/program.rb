@@ -21,9 +21,16 @@ class ProgramTag < Liquid::Tag
     data = JSON.parse File.read '_program.json'
     byday = {}
     data.each do |e|
-      day = Time.parse(e['start']).to_date.strftime('%A')
-      byday[day] = [] if byday[day] == nil
-      byday[day] << e
+      t = Time.parse(e['start'])
+      day = t.to_date
+      day = day-1 if t.strftime("%H").to_i < 5
+      day = day.strftime('%A') # todo 4:00
+      byday[day] = {
+        :events => [],
+        :locations => []
+      } if byday[day] == nil
+      byday[day][:events] << e
+      byday[day][:locations] << e['location'] unless byday[day][:locations].include? e['location']
     end
     @html = Nokogiri::HTML::DocumentFragment.parse ""
     Nokogiri::HTML::Builder.with(@html) do |html|
@@ -31,9 +38,15 @@ class ProgramTag < Liquid::Tag
         byday.each do |d,l|
           html.div(:class => first, :id => day_l_map[d]) do 
             first = 'tab-pane row'
-            html.div(:class => 'col-md-2 visible-md visible-lg')
+            html.div(:class => 'col-md-2 visible-md visible-lg') do
+              html.ul(:class => 'nav nav-pills nav-stacked') do
+                l[:locations].each do |loc|
+                  html.li(:class => 'active') { html.a(:href => '#') { html.text loc }}
+                end
+              end
+            end
             html.div(:class => 'col-md-10') do
-              l.each do |e|
+              l[:events].each do |e|
                 e['start'] = Time.parse e['start']
                 e['end'] = Time.parse e['end']
                 html.div(:class => 'program-pont row') do 
