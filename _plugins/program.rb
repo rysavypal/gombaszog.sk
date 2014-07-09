@@ -55,7 +55,7 @@ class ProgramTag < Liquid::Tag
                   loc ? html.li(:class => "", 'data-toggle' => "#{day_l_map[d]}_p_#{i}") { html.a(:href => '#') { html.text loc }} : nil
                   i+=1
                 end
-                l[:partners].include?(nil) ? html.li(:class => "", 'data-toggle' => "#{day_l_map[d]}_p_#{l[:partners].find_index(nil)}") { html.a(:href => '#') { html.text "Egyebb" }} : nil
+                l[:partners].include?(nil) ? html.li(:class => "", 'data-toggle' => "#{day_l_map[d]}_p_#{l[:partners].find_index(nil)}") { html.a(:href => '#') { html.text "Egyéb" }} : nil
               end
             end
             html.div(:class => 'col-md-10') do
