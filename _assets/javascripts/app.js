@@ -52,12 +52,31 @@ jQuery(document).ready(function($){
         userId: 192561160
     }).run();
 
-
+    // program filter
     $(".program .filter li a").click(function(e) {
       e.preventDefault();
       li = $(this).parent();
       li.toggleClass('active');
-      $('div.program-pont.'+li.data("toggle")).toggle();
+      is_active = false;
+      li.parent().find('li').each(function(f) {
+        if ($(this).hasClass('active')) {
+            is_active = true;
+        }
+      });
+
+      if(is_active) {
+        li.parent().find('li').each(function(f) {
+          if ($(this).hasClass('active')) {
+              $("."+$(this).data("toggle")).show();
+          } else {
+              $("."+$(this).data("toggle")).hide();
+          }
+        });
+      } else {
+        li.parent().find('li').each(function(f) {
+          $("."+$(this).data("toggle")).show();
+        });
+      }
     });
 
   });
