@@ -403,7 +403,7 @@ group: fooldal
           </div>
           <div class="single-event latest-post">
             <h2 class="heading">Legutóbbi <strong>bejegyzések</strong></h2>
-            {% for post in site.posts limit: 2 %}
+            {% for post in site.posts limit: 4 %}
             <div class="media">
               <div class="pull-left">
                 <a href="{{ post.url }}"><img src="{{ post.thumbnail | replace: 'image_','thb_image_' }}" alt="" width="125"></a>
