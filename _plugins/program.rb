@@ -49,13 +49,13 @@ class ProgramTag < Liquid::Tag
                 #  i+=1
                 #end
                 #l[:locations].include?(nil) ? html.li(:class => "active", 'data-toggle' => "#{day_l_map[d]}_#{l[:locations].find_index(nil)}") { html.a(:href => '#') { html.text "Egyebb" }} : nil
-                html.li(:class => "active") { html.text 'Szerverzok' }
+                #html.li(:class => "active") { html.text 'Szerverzok' }
                 i = 0
                 l[:partners].each do |loc|
-                  loc ? html.li(:class => "active", 'data-toggle' => "#{day_l_map[d]}_p_#{i}") { html.a(:href => '#') { html.text loc }} : nil
+                  loc ? html.li(:class => "", 'data-toggle' => "#{day_l_map[d]}_p_#{i}") { html.a(:href => '#') { html.text loc }} : nil
                   i+=1
                 end
-                l[:partners].include?(nil) ? html.li(:class => "active", 'data-toggle' => "#{day_l_map[d]}_p_#{l[:partners].find_index(nil)}}") { html.a(:href => '#') { html.text "Egyebb" }} : nil
+                l[:partners].include?(nil) ? html.li(:class => "", 'data-toggle' => "#{day_l_map[d]}_p_#{l[:partners].find_index(nil)}") { html.a(:href => '#') { html.text "Egyebb" }} : nil
               end
             end
             html.div(:class => 'col-md-10') do
