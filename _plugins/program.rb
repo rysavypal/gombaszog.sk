@@ -45,13 +45,13 @@ class ProgramTag < Liquid::Tag
                 html.li(:class => "active") { html.text 'Helyszinek' }
                 i = 0
                 l[:locations].each do |loc|
-                  html.li(:class => "active", 'data-toggle' => "#{day_l_map[d]}_#{i}") { html.a(:href => '#') { html.text loc }}
+                  html.li(:class => "active", 'data-toggle' => "#{day_l_map[d]}_#{i}") { html.a(:href => '#') { html.text (loc ? loc : "Egyebb") }}
                   i+=1
                 end
                 html.li(:class => "active") { html.text 'Szerverzok' }
                 i = 0
                 l[:partners].each do |loc|
-                  html.li(:class => "active", 'data-toggle' => "#{day_l_map[d]}_p_#{i}") { html.a(:href => '#') { html.text loc }}
+                  html.li(:class => "active", 'data-toggle' => "#{day_l_map[d]}_p_#{i}") { html.a(:href => '#') { html.text (loc ? loc : "Egyebb") }}
                   i+=1
                 end
               end
