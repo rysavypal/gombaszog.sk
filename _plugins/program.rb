@@ -68,7 +68,7 @@ class ProgramTag < Liquid::Tag
                   html.div(:class => 'row') do
                     html.div(:class => 'col-md-10') do
                       html.div(:class => 'col-md-2 meta') do
-                        if e['end'] - e['start'] == 60
+                        if e['end'] - e['start'] < 100
                           html.div(:class => 'idopont') { html.text e['start'].strftime('%k:%M') }
                         else
                           html.div(:class => 'idopont') { html.text "#{e['start'].strftime('%k:%M')} - #{e['end'].strftime('%k:%M')}" }
