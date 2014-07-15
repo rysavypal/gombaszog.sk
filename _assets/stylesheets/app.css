@@ -195,6 +195,9 @@
  {
   border-top: 0px;
 }
+.stream ul li .desc img {
+  width: 100%;
+}
 .stream ul li {
   list-style: none;
   margin-bottom: 10px;
