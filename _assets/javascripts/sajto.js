@@ -45,6 +45,17 @@ if ($("#stream1").length > 0) {
     */
   }
 
+  function set_video(name) {
+    alert(name);
+    if(name == 'live') {
+        $('#videostream').empty();
+        $('#videostream').append('<iframe width="480" height="392" src="http://www.ustream.tv/embed/18506424?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>');
+    }else{
+        $('#videostream').empty();
+        $('#videostream').append('<iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PLpc7uPls78G_PRivR3l-wowsMbNPMfbFK" frameborder="0" allowfullscreen></iframe>');
+    }
+  }
+
   $.getJSON("https://spreadsheets.google.com/feeds/cells/1rEaQIXhk-pejGW1yxQdoy_J42Pbtn2a853GyRaTsqd8/od6/public/basic?alt=json").done(function (data) {
     data.feed.entry.forEach(function(e) {
         if (typeof(stream_data[parseInt(e.title.$t.replace(/[A-Z]+/, ''))]) == 'undefined') {
@@ -55,6 +66,7 @@ if ($("#stream1").length > 0) {
     });
 
     stream_page(1);
+    set_video(stream_data[1]['E']);
   });
 
 }
