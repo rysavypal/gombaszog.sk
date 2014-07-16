@@ -184,6 +184,45 @@
     border-bottom-right-radius:.5em;
 }
 
+/* Stream */
+
+.stream { font-size: 14px;}
+.stream ul {
+  padding: 0px;
+}
+.stream ul li:first-child,
+.stream ul li:last-child
+ {
+  border-top: 0px;
+}
+.stream ul li .desc img {
+  width: 100%;
+}
+.stream ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 5px 0 5px 0; 
+}
+.stream ul li .placc {
+  color: #27ae60;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 3px;
+}
+.stream .streamhead {
+  width: 100%;
+}
+.stream .streamhead .time {
+ padding: 0px 15px 0px 0px; 
+ font-weight: bold;
+ font-size: 18px;
+ color: #c0392b;
+}
+.stream .streamhead .title {
+  font-weight: bold;
+  font-size: 16px
+}
 /* Program */
 
 .program .nav-pills>li {
