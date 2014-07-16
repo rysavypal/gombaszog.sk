@@ -26,3 +26,35 @@ if ($("#sajto-hirek").length > 0) {
   });
 
 }
+
+if ($("#stream1").length > 0) {
+  var stream_data = {};
+  var stream_data_rows = 0;
+  var stream_page_size = 4;
+
+  function stream_page(page_active) {
+    $("#stream1").empty();
+    for(var i=(page_active-1)*stream_page_size+2; i < (page_active)*stream_page_size+2 && i<=stream_data_rows; i++)
+        $("#stream1").append('<li><div class="streamhead"><div class="time pull-left">'+stream_data[i]['A']+'</div><div class="title">'+stream_data[i]['B']+'</div></div><div class="placc">'+stream_data[i]['C']+'</div><div class="desc">'+stream_data[i]['D']+'</div></li>');
+    $("#stream1").append('<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>');
+
+    /*
+    $("#stream1-pages").empty();
+    for(var i=1; i < stream_data_rows/stream_page_size+1; i++)
+        $("#stream1-pages").append('<li' + (i==page_active ? ' class="active"':'') + '><a href="javascript:stream_page(' + i + ');">' + i + '</a></li>');
+    */
+  }
+
+  $.getJSON("https://spreadsheets.google.com/feeds/cells/1rEaQIXhk-pejGW1yxQdoy_J42Pbtn2a853GyRaTsqd8/od6/public/basic?alt=json").done(function (data) {
+    data.feed.entry.forEach(function(e) {
+        if (typeof(stream_data[parseInt(e.title.$t.replace(/[A-Z]+/, ''))]) == 'undefined') {
+          stream_data[parseInt(e.title.$t.replace(/[A-Z]+/, ''))] = {};
+          stream_data_rows += 1;
+        }
+        stream_data[parseInt(e.title.$t.replace(/[A-Z]+/, ''))][e.title.$t.replace(/[0-9]+/, '')] = e.content.$t;
+    });
+
+    stream_page(1);
+  });
+
+}
