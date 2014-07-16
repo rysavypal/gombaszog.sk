@@ -35,10 +35,10 @@ if ($("#stream1").length > 0) {
   function stream_page(page_active) {
     $("#stream1").empty();
     for(var i=(page_active-1)*stream_page_size+2; i < (page_active)*stream_page_size+2 && i<=stream_data_rows; i++) {
-        if(stream_data[i]['A']) sa = stream_data[i]['A']; else sa = '';
-        if(stream_data[i]['B']) sb = stream_data[i]['B']; else sb = '';
-        if(stream_data[i]['C']) sc = stream_data[i]['C']; else sc = '';
-        if(stream_data[i]['D']) sd = stream_data[i]['D']; else sd = '';
+        if(typeof(stream_data[i]['A']) != "undefined") sa = stream_data[i]['A']; else sa = '';
+        if(typeof(stream_data[i]['B']) != "undefined") sb = stream_data[i]['B']; else sb = '';
+        if(typeof(stream_data[i]['C']) != "undefined") sc = stream_data[i]['C']; else sc = '';
+        if(typeof(stream_data[i]['D']) != "undefined") sd = stream_data[i]['D']; else sd = '';
         $("#stream1").append('<li><div class="streamhead"><div class="time pull-left">'+sa+'</div><div class="title">'+sb+'</div></div><div class="placc">'+sc+'</div><div class="desc">'+sd+'</div></li>');
     }
     $("#stream1").append('<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>');
