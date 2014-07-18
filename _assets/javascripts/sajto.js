@@ -32,8 +32,11 @@ if ($("#stream1").length > 0) {
   var stream_data_rows = 0;
   var stream_page_size = 4;
   var on_stream = [0, 0, 0, 0];
-  var last_stream = '';
   var vid_k = 1000;
+  var last_stream_status = '';
+  var last_stream = '';
+  var web_stream_status = '';
+  var last_stream_status_change = 0.0;
 
   function stream_page(page_active) {
     var j=0;
@@ -65,29 +68,39 @@ if ($("#stream1").length > 0) {
     }
     s += '</ul><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>';
     $("#stream1").replaceWith(s);
-
-    /*
-    $("#stream1-pages").empty();
-    for(var i=1; i < stream_data_rows/stream_page_size+1; i++)
-        $("#stream1-pages").append('<li' + (i==page_active ? ' class="active"':'') + '><a href="javascript:stream_page(' + i + ');">' + i + '</a></li>');
-    */
   }
 
-  function set_video(name) {
-    if(last_stream == name) {return;}
-    last_stream = name;
-    if(name == 'live') {
+  function set_video() {
+    // decide
+    //last_stream last_stream_status
+    //web_stream_status
+    if(last_stream_status == '') return; //wait for stream status
+
+    if(last_stream != 'live') {
+        new_stream_status = 'youtube';
+    } else {
+        var now = new Date().getTime();
+        if(last_stream_status == 'live' && last_stream_status_change < now-20) {
+            new_stream_status = 'live';
+        }else if(last_stream_status != 'live' && last_stream_status_change < now-20){
+            new_stream_status = 'youtube';
+        }else{
+            new_stream_status = last_stream_status;
+        }
+    }
+
+    if(web_stream_status == new_stream_status) {return;}
+    web_stream_status = new_stream_status;
+    console.log('status change to '+ new_stream_status);
+    if(new_stream_status == 'live') {
         $('#videostream').empty();
         $('#videostream').append('<iframe width="480" height="392" src="//www.ustream.tv/embed/18506424?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>');
     }else{
         $('#videostream').empty();
         $('#videostream').append('<iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PLpc7uPls78G_PRivR3l-wowsMbNPMfbFK" frameborder="0" allowfullscreen></iframe>');
     }
-    //$('#videostream').append(name);
   }
 
-
-  //workaround
   setInterval(function() {
     vid_k += 1;
     if (vid_k > 20) vid_k = 0; else return;
@@ -101,8 +114,22 @@ if ($("#stream1").length > 0) {
           stream_data[parseInt(e.title.$t.replace(/[A-Z]+/, ''))][e.title.$t.replace(/[0-9]+/, '')] = e.content.$t;
       });
 
+      last_stream = stream_data[1]['F'];
       stream_page(1);
-      set_video(stream_data[1]['F']);
+      set_video();
+    });
+    $.ajax({
+        type: "GET", 
+        dataType: "jsonp",
+        url: "https://api.ustream.tv/json/channel/18506424/getValueOf/status",
+        data: {},
+        success: function(data) {
+            if(last_stream_status != data) {
+                last_stream_status_change = new Date().getTime();
+            }
+            last_stream_status = data;
+            set_video();
+        }
     });
   },500);
 
