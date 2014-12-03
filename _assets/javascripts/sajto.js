@@ -1,7 +1,7 @@
 if ($("#sajto-hirek").length > 0) {
   var sajto_data = {};
   var sajto_data_rows = 0;
-  var sajto_page_size = 12;
+  var sajto_page_size = 9;
 
   function sajto_page(page_active) {
     $("#sajto-hirek").empty();
@@ -9,8 +9,12 @@ if ($("#sajto-hirek").length > 0) {
         $("#sajto-hirek").append('<li><strong>'+sajto_data[i]['B']+'</strong>: <a href="'+sajto_data[i]['E']+'" target="_blank">'+sajto_data[i]['D']+'</a></li>');
 
     $("#sajto-pages").empty();
-    for(var i=1; i < sajto_data_rows/sajto_page_size+1; i++)
-        $("#sajto-pages").append('<li' + (i==page_active ? ' class="active"':'') + '><a href="javascript:sajto_page(' + i + ');">' + i + '</a></li>');
+    /*for(var i=1; i < sajto_data_rows/sajto_page_size+1; i++)
+        $("#sajto-pages").append('<li' + (i==page_active ? ' class="active"':'') + '><a href="javascript:sajto_page(' + i + ');">' + i + '</a></li>');*/
+    if(page_active!=1)
+      $("#sajto-pages").append('<li><a href="javascript:sajto_page(' + (-1+page_active) + ');">Újabbak</a></li>');
+    if(page_active!=sajto_data_rows/sajto_page_size+1)
+      $("#sajto-pages").append('<li><a href="javascript:sajto_page(' + (1+page_active) + ');">Régebbiek</a></li>');
   }
 
   $.getJSON("https://spreadsheets.google.com/feeds/cells/1PVopI292rFYQppL-LeMRec8RkAKuJBDBtWMxViIu5T0/od6/public/basic?alt=json").done(function (data) {
