@@ -1,7 +1,7 @@
 if ($("#sajto-hirek").length > 0) {
   var sajto_data = {};
   var sajto_data_rows = 0;
-  var sajto_page_size = 12;
+  var sajto_page_size = 9;
 
   function sajto_page(page_active) {
     $("#sajto-hirek").empty();
