@@ -13,7 +13,7 @@ if ($("#sajto-hirek").length > 0) {
         $("#sajto-pages").append('<li' + (i==page_active ? ' class="active"':'') + '><a href="javascript:sajto_page(' + i + ');">' + i + '</a></li>');*/
     if(page_active!=1)
       $("#sajto-pages").append('<li><a href="javascript:sajto_page(' + (-1+page_active) + ');">Újabbak</a></li>');
-    if(page_active<sajto_data_rows/sajto_page_size+1)
+    if(page_active <= sajto_data_rows/sajto_page_size)
       $("#sajto-pages").append('<li><a href="javascript:sajto_page(' + (1+page_active) + ');">Régebbiek</a></li>');
   }
 
