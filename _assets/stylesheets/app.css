@@ -25,6 +25,14 @@ div.poll-progress
   height: 27px;
 }
 
+.progress.poll-progress.selected {
+background-color: rgb(255, 239, 131);
+}
+
+.selected .progress-bar.progress-bar-info {
+background-color: rgb(255, 194, 0);
+}
+
 .poll-progress span 
 {
   font-size: 18px;
