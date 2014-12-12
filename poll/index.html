@@ -73,6 +73,9 @@ group: otletborze
                         if (jQuery(v).val() != "") data[jQuery(v).val()] = 1;
                       });
                       jQuery("#poll").html("<p class=\"text-center\"><i class=\"fa fa-spinner fa-spin fa-5x\"></i></p>");
+                      console.log('--poll start--');
+                      console.log(data);
+                      console.log('--poll end--');
                       jQuery.ajax({
                         url: '/api/poll',
                         dataType: 'json',
