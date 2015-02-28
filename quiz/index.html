@@ -13,8 +13,8 @@ hidden: true
   <link href='//fonts.googleapis.com/css?family=Dosis&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   {% stylesheet app %}
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript">
-    //if (window.location == window.parent.location) window.location.href = 'https://www.facebook.com/gombaszog/app_267323596708516';
+  <script type="text/javascript"><!--
+    if (window.location == window.parent.location) window.location.href = 'https://www.facebook.com/gombaszog/app_267323596708516';
     user_profile = null;
     ajax_error = function() {
       jQuery(".fb-canvas").html("<p class=\"justified\">A szerverrel való kommunikáció sikertelen volt, zárd be ezt az ablakot és próbáld újra később!</p>");
@@ -74,11 +74,8 @@ hidden: true
         xfbml      : true
       });
       FB.login(function(response) { // log in
-        alert('test1');
         if (response.authResponse) { // logged in
-          alert('test2');
           FB.api('/me/permissions', function(response) { // request permissions
-            alert('test3');
             r = response.data[0];
             if (r.publish_actions && r.rsvp_event && r.user_likes && r.email && r.user_birthday && r.user_hometown && r.user_location && r.basic_info) {
               FB.Event.subscribe('edge.create', location.reload);
@@ -125,7 +122,7 @@ hidden: true
       js.src = "//connect.facebook.net/en_US/all.js";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-  </script> 
+  --></script> 
 </head>
 <body>
   <header id="navigation">    
