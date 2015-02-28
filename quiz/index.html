@@ -59,9 +59,45 @@ hidden: true
           if (data.results > 0) j.append("<p class=\"fb-results\">A tízből "+data.results+" kérdésre válaszoltál helyesen, így a sorsolásos kalapba "+data.results+" cédulával kerülsz be!</p>"); 
           else j.append("<p class=\"fb-results\">Sajnos egy válaszod sem volt helyes, így a sorsolásba nem kerülsz bele.</p>");
           j.append("<p class=\"fb-nexttime\">A későbbiekben újabb kvízekkel jelentkezünk, figyeld a facebook-falunkat!</p>");
+          var msg="Kitöltöttem a GombaKvízt, amellyel ingyenes belépőjegy nyerhető a 2014-es Gombaszögi Nyári Táborba! Sorsolás május 31-én, töltsd ki te is itt: http://www.gombaszog.sk/quiz";
+          switch(data.results) {
+            case 0:
+              msg = "0/10";
+              break;
+            case 1:
+              msg = "1/10";
+              break;
+            case 2:
+              msg = "2/10";
+              break;
+            case 3:
+              msg = "3/10";
+              break;
+            case 4:
+              msg = "4/10";
+              break;
+            case 5:
+              msg = "5/10";
+              break;
+            case 6:
+              msg = "6/10";
+              break;
+            case 7:
+              msg = "7/10";
+              break;
+            case 8:
+              msg = "8/10";
+              break;
+            case 9:
+              msg = "9/10";
+              break;
+            case 10:
+              msg = "10/10";
+              break;
+          }
           FB.api('/me/feed', 'POST', {
             link: 'https://www.facebook.com/photo.php?fbid=722966721086492&set=a.200789593304210.46815.185520844831085',
-            message: 'Kitöltöttem a GombaKvízt, amellyel ingyenes belépőjegy nyerhető a 2014-es Gombaszögi Nyári Táborba! Sorsolás május 31-én, töltsd ki te is itt: http://www.gombaszog.sk/quiz'
+            message: msg
           });
           break;
       }
