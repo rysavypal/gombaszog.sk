@@ -70,11 +70,15 @@ hidden: true
       FB.init({
         appId      : '267323596708516',
         status     : true,
+        cookie     : true,
         xfbml      : true
       });
       FB.login(function(response) { // log in
+        alert('test1');
         if (response.authResponse) { // logged in
+          alert('test2');
           FB.api('/me/permissions', function(response) { // request permissions
+            alert('test3');
             r = response.data[0];
             if (r.publish_actions && r.rsvp_event && r.user_likes && r.email && r.user_birthday && r.user_hometown && r.user_location && r.basic_info) {
               FB.Event.subscribe('edge.create', location.reload);
