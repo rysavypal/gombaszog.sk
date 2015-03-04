@@ -57,42 +57,42 @@ hidden: true
           break;
         case 'results':
           if (data.results > 0) j.append("<p class=\"fb-results\">A tízből "+data.results+" kérdésre válaszoltál helyesen, így a sorsolásos kalapba "+data.results+" cédulával kerülsz be!</p>"); 
-          else j.append("<p class=\"fb-results\">Sajnos egy válaszod sem volt helyes, így a sorsolásba nem kerülsz bele.</p>");
+          else j.append("<p class=\"fb-results\">Egy válaszod sem volt helyes, de a sorsolásba így is bekerülsz egy vigaszszelvénnyel!</p>");
           j.append("<p class=\"fb-nexttime\">A későbbiekben újabb kvízekkel jelentkezünk, figyeld a facebook-falunkat!</p>");
-          var msg="Kitöltöttem a GombaKvízt, amellyel ingyenes belépőjegy nyerhető a 2014-es Gombaszögi Nyári Táborba! Sorsolás május 31-én, töltsd ki te is itt: http://www.gombaszog.sk/quiz";
+          var msg="Kitöltöttem a GombaKvízt, amellyel ingyenes belépőjegy nyerhető a 2015-ös Gombaszögi Nyári Táborba! Sorsolás március 31-én, töltsd ki te is itt: http://www.gombaszog.sk/quiz";
           switch(data.results) {
             case 0:
-              msg = "0/10";
+              msg = "Gombatlanság? :) Egy választ sem találtam el a Gombaszögi Nyári Tábor kvízén, de így is bekerültem a sorsolásba! Töltsd ki Te is, és nyerj jegyet: http://gombaszog.sk/quiz";
               break;
             case 1:
-              msg = "1/10";
+              msg = "Gombatlanság? :) 10-ből 1 kérdésre válaszoltam helyesen a Gombaszögi Nyári Tábor kvízén, de így is bekerültem a sorsolásba! Töltsd ki Te is, és nyerj jegyet: http://gombaszog.sk/quiz";
               break;
             case 2:
-              msg = "2/10";
+              msg = "Gombatlanság? :) 10-ből 2 kérdésre válaszoltam helyesen a Gombaszögi Nyári Tábor kvízén, de így is bekerültem a sorsolásba! Próbáld ki Te is, és nyerj jegyet: http://gombaszog.sk/quiz";
               break;
             case 3:
-              msg = "3/10";
+              msg = "Lesz ez még jobb is! 10-ből 4 kérdésre adtam helyes választ a Gombaszögi Nyári Tábor kvízén. Töltsd ki Te is, és nyerj jegyet az idei táborba: http://gombaszog.sk/quiz";
               break;
             case 4:
-              msg = "4/10";
+              msg = "Lesz ez még jobb is! 10-ből 4 kérdésre adtam helyes választ a Gombaszögi Nyári Tábor kvízén. Tedd próbára te is a tudásodat, és nyerj jegyet az idei táborba: http://gombaszog.sk/quiz";
               break;
             case 5:
-              msg = "5/10";
+              msg = "Feles! 10 kérdésből 5-re válaszoltam helyesen a Gombaszögi Nyári Tábor kvízén. Töltsd ki Te is a kvízt, amellyel ingyen jegyet nyerhetünk az idei táborba: http://gombaszog.sk/quiz";
               break;
             case 6:
-              msg = "6/10";
+              msg = "GombaSzakértő! 10-ből 6 kérdésre válaszoltam helyesen a Gombaszögi Nyári Tábor kvízén. Töltsd ki Te is a kvízt, amellyel ingyen jegyet nyerhetsz az idei táborba: http://gombaszog.sk/quiz";
               break;
             case 7:
-              msg = "7/10";
+              msg = "GombaSzakértő! 10-ből 7 kérdésre válaszoltam helyesen a Gombaszögi Nyári Tábor kvízén. Töltsd ki Te is a kvízt, amellyel ingyen jegyet nyerhetsz az idei táborba: http://gombaszog.sk/quiz";
               break;
             case 8:
-              msg = "8/10";
+              msg = "GombaProfi! B-) 10-ből 8 kérdésre adtam helyes választ a Gombaszögi Nyári Tábor kvízén. Tedd próbára te is a tudásod, és nyerj jegyet az idei táborba: http://gombaszog.sk/quiz";
               break;
             case 9:
-              msg = "9/10";
+              msg = "GombaProfi! B-) 10-ből 9 kérdésre adtam helyes választ a Gombaszögi Nyári Tábor kvízén. Tedd próbára te is a tudásod, és nyerj jegyet az idei táborba: http://gombaszog.sk/quiz";
               break;
             case 10:
-              msg = "10/10";
+              msg = "Fején találtam a GombaSzöget! B-) Az összes kérdésre helyesen válaszoltam a Gombaszögi Nyári Tábor kvízén. Töltsd ki Te is, és nyerj jegyet az idei táborba: http://gombaszog.sk/quiz";
               break;
           }
           FB.api('/me/feed', 'POST', {
