@@ -24,7 +24,7 @@ group: jegyek
                 <p class="price-content">
                   Hat napra<br/> 
                   Tábor és koncertek<br/>
-                  100 vevőnek
+                  A következő 100 vevőnek
                 </p>
               </div>
             </li>
@@ -35,27 +35,28 @@ group: jegyek
                 <p class="price-content">
                   Hat napra<br/>
                   Tábor és koncertek<br/>
-                  első 100 vevőnek
+                  első 50 vevőnek / április végéig
                 </p>
                 <a class="btn btn-primary btn-pricing">Jegyelővétel!</a>
               </div>
             </li>
             <li class="xplore">
               <div class="regular-price">
-                <h2>Hetijegy <span>interneten</span></h2>
-                <p class="price">&euro;29</p>
-                <p class="price-content">
-                  Hat napra<br/>
-                  Tábor és koncertek
-                </p>
-              </div>
-            </li>
-            <li class="vip">
-              <div class="regular-price">
                 <h2>Hetijegy<span>helyszínen</span></h2>
                 <p class="price">&euro;39</p>
                 <p class="price-content">Hat nap<br>Tábor és Koncertek</p>
+              </div>            
+            </li>
+            <li class="vip">
+              <div class="regular-price">
+                <h2>Koncertjegy <span>helyszínen</span></h2>
+                <p class="price">&euro;7</p>
+                <p class="price-content">
+                  Egy este<br/>
+                  Koncertek
+                </p>
               </div>
+
             </li>
           </ul>
           <div class="pricing-content extra-arak">
@@ -67,8 +68,8 @@ group: jegyek
                   </div>
                   <div class="col-sm-8">
                     <h3>Kajajegy</h3>
-                    <p>Reggeli+vacsora <span>&euro;13</span> (napi <span>&euro;2.50</span>)</p>
-                    <!--<p>Ebéd <span>&euro;15</span> (napi <span>&euro;3</span>)</p>-->
+                    <p>Lecsópasz: Reggeli+vacsora <span>&euro;12</span></p>
+                    <p>Golden Hurkapasz: 5 db <span>&euro;3-3.5</span> főétel</p>
                   </div>
                 </div>
               </div>
@@ -80,7 +81,7 @@ group: jegyek
                   <div class="col-sm-8">
                     <h3>Sátorjegy</h3>
                     <p>Sátranként <span>&euro;10</span> (péntektől <span>&euro;6</span>)</p>
-                    <p>Csak a tulajdonosnak</p>
+                    <p>Csak egy lakó fizeti</p>
                   </div>
                 </div>
               </div>
@@ -130,15 +131,15 @@ group: jegyek
               <div class="row">
                 <div class="col-md-3">
                   <div class="form-group">
-                    <label for="ticket_last_name">Vezetéknév</label>
+                    <label for="ticket_last_name">Vezetékneved</label>
                     <input type="text" class="form-control" id="ticket_last_name" placeholder="" name="ticket[last_name]"/>
                   </div>
                   <div class="form-group">
-                    <label for="ticket_first_name">Keresztnév</label>
+                    <label for="ticket_first_name">Keresztneved</label>
                     <input type="text" class="form-control" id="ticket_first_name" placeholder="" name="ticket[first_name]"/>
                   </div>
                   <div class="form-group">
-                    <label for="ticket_email">E-mail <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Fontos, hogy valós e-mail címet adj meg, mert erre küldjük el a jegyedet! Egy elővételhez csak egy a-mail cím használható!"></i></label>
+                    <label for="ticket_email">E-mail címed <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Fontos, hogy valós e-mail címet adj meg, mert erre küldjük el a jegyedet! Egy elővételhez csak egy a-mail cím használható!"></i></label>
                     <input type="email" class="form-control" id="ticket_email" placeholder="Ide küldjük a jegyed!" name="ticket[email]"/>
                   </div>
                   <div class="form-group">
@@ -368,12 +369,12 @@ group: jegyek
                     </select>
                   </div>
                   <div class="form-group">
-                    <label class="control-label" for="ticket_voucher">Kupon <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Itt adhatod meg a kedvezményre feljogosító kuponod kódját."></i></label>
-                    <input type="text" class="form-control" id="ticket_voucher" placeholder="" name="ticket[voucher]"/>
+                    <label class="control-label" for="ticket_voucher">Ki ajánlotta a tábort? / Kupon <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Itt adhatod meg, ki ajánlotta a tábort, vagy a kedvezményre feljogosító kuponod kódját."></i></label>
+                    <input type="text" class="form-control" id="ticket_voucher" placeholder="Ajánló email-címe / Kuponkód" name="ticket[voucher]"/>
                   </div>
                   <div class="form-group">
                     <label class="control-label" for="ticket_captcha">Megerősítő kód <i class="fa fa-info-circle info-tooltip re-captcha" data-toggle="tooltip" data-placement="bottom" title="Az alábbi mezőbe a képen található kódot kell bemásolni. Ha a szöveg nem lenne olvasható, kattints és kapsz újat!"></i></label>
-                    <input type="text" class="form-control" id="ticket_captcha" placeholder="" name="ticket[captcha]" style="background-size: 120px; background-position: right center; background-repeat: no-repeat;"/>
+                    <input type="text" class="form-control" id="ticket_captcha" placeholder="Ezt írd ide &gt;" name="ticket[captcha]" style="background-size: 120px; background-position: right center; background-repeat: no-repeat;"/>
                   </div>                  
                 </div>
                 <div class="col-md-3">
@@ -413,7 +414,7 @@ group: jegyek
                   <div class="row">
                     <div class="col-xs-7">
                       <div class="form-group">
-                        <label class="control-label" for="ticket_food">Étkezés? <a class="nocolor" href="/info#etkezes" target="_blank"><i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Ha nem szeretnél kajajegyet, hagyd alapértelmezetten! Bővebb információkért kattints!"></i></a></label>
+                        <label class="control-label" for="ticket_food">Mit ennél? <a class="nocolor" href="/info#etkezes" target="_blank"><i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Ha nem szeretnél kajajegyet, hagyd alapértelmezetten! Bővebb információkért kattints!"></i></a></label>
                         <select id="ticket_food" name="ticket[food]" class="form-control influence">
                           <option value="0">Kössz nem</option>
                         </select>
@@ -429,7 +430,7 @@ group: jegyek
                 </div>
                 <div class="col-md-3">
                   <div class="form-group">
-                    <label for="ticket_joke">Mondj nekünk egy jó viccet! <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Azt hitted, hogy itt találsz bármilyen használható információt? Hát NEM!"></i></label>
+                    <label for="ticket_joke">Melliké vagy? :) <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Azt hitted, hogy itt találsz bármilyen használható információt? Hát NEM!"></i></label>
                     <input type="text" class="form-control" id="ticket_joke" name="ticket[stat_joke]"/>
                   </div>
                   <div class="form-group">
