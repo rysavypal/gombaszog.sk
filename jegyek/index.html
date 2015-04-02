@@ -374,7 +374,7 @@ group: jegyek
                   </div>
                   <div class="form-group">
                     <label class="control-label" for="ticket_captcha">Megerősítő kód <i class="fa fa-info-circle info-tooltip re-captcha" data-toggle="tooltip" data-placement="bottom" title="Az alábbi mezőbe a képen található kódot kell bemásolni. Ha a szöveg nem lenne olvasható, kattints és kapsz újat!"></i></label>
-                    <input type="text" class="form-control" id="ticket_captcha" placeholder="Ezt írd ide &gt;" name="ticket[captcha]" style="background-size: 120px; background-position: right center; background-repeat: no-repeat;"/>
+                    <input type="text" class="form-control" id="ticket_captcha" placeholder="Ezt írd ide --&gt;" name="ticket[captcha]" style="background-size: 120px; background-position: right center; background-repeat: no-repeat;"/>
                   </div>                  
                 </div>
                 <div class="col-md-3">
@@ -423,14 +423,14 @@ group: jegyek
                     <div class="col-xs-5">
                       <div class="form-group">
                         <label class="control-label" for="ticket_beer">Sör? <a class="nocolor" href="/info#etkezes" target="_blank"><i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Egy sörkupon ára 10€ és 11&euro;-nyi sörre váltható be!"></i></a></label>
-                        <input type="number" class="form-control influence" id="ticket_beer" placeholder="" name="ticket[beer]" value="0" data-price="10.0"/>
+                        <input type="number" min=0 class="form-control influence" id="ticket_beer" placeholder="" name="ticket[beer]" value="0" data-price="10.0"/>
                       </div>                  
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="form-group">
-                    <label for="ticket_joke">Melliké vagy? :) <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Azt hitted, hogy itt találsz bármilyen használható információt? Hát NEM!"></i></label>
+                    <label for="ticket_joke">Melliké vagy? <i class="fa fa-info-circle info-tooltip" data-toggle="tooltip" data-placement="bottom" title="Azt hitted, hogy itt találsz bármilyen használható információt? Hát NEM!"></i></label>
                     <input type="text" class="form-control" id="ticket_joke" name="ticket[stat_joke]"/>
                   </div>
                   <div class="form-group">
