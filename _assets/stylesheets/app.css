@@ -7,47 +7,9 @@
  *= require vendor/select2
  *= require vendor/select2-bootstrap
  */
-
-div.progress.poll-progress span
-{
-  margin-left: 5px;
-  margin-right: 5px;
-  white-space: nowrap;
-}
-
-div.progress.poll-progress.selected span
-{
-    color: #041EDE;
-}
-
-div.poll-progress
-{
-	height: 27px;
-}
-
-.progress.poll-progress.selected {
-	background-color: rgb(255, 239, 131);
-}
-
-.progress.poll-progress:hover {
-	cursor: pointer;
-}
-
-.selected .progress-bar.progress-bar-info {
-	background-color: rgb(255, 194, 0);
-}
-
-.poll-progress span 
-{
-	font-size: 18px;
-	font-weight: bold;
-	vertical-align: middle;
-	color: #333;
-}
-
  .mediap .row 
  { 
-	margin-bottom: 10px;
+  margin-bottom: 10px;
  }
  
  .tarsszerv .row .col-md-3,
@@ -222,45 +184,6 @@ div.poll-progress
     border-bottom-right-radius:.5em;
 }
 
-/* Stream */
-
-.stream { font-size: 14px;}
-.stream ul {
-  padding: 0px;
-}
-.stream ul li:first-child,
-.stream ul li:last-child
- {
-  border-top: 0px;
-}
-.stream ul li .desc img {
-  width: 100%;
-}
-.stream ul li {
-  list-style: none;
-  margin-bottom: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 5px 0 5px 0; 
-}
-.stream ul li .placc {
-  color: #27ae60;
-  font-weight: bold;
-  width: 100%;
-  margin-top: 3px;
-}
-.stream .streamhead {
-  width: 100%;
-}
-.stream .streamhead .time {
- padding: 0px 15px 0px 0px; 
- font-weight: bold;
- font-size: 18px;
- color: #c0392b;
-}
-.stream .streamhead .title {
-  font-weight: bold;
-  font-size: 16px
-}
 /* Program */
 
 .program .nav-pills>li {
@@ -667,4 +590,3 @@ input.has-error {
 #dalnap .album-heading h4 {
   margin-bottom: 10px;
 }
-
